@@ -527,16 +527,16 @@
 
             <!-- GÖRÜNÜM 2: LİSTE (TABLO) -->
             <div x-show="view === 'list'" x-transition class="bg-slate-900 rounded-2xl shadow-xl border border-slate-800 overflow-hidden">
-                <div class="overflow-x-auto touch-pan-x">
-                    <table class="min-w-full divide-y divide-slate-800">
+                <div class="w-full">
+                    <table class="w-full table-fixed divide-y divide-slate-800">
                         <thead class="bg-slate-950">
                             <tr>
-                                <th scope="col" class="px-4 py-4 text-left text-xs font-bold text-slate-400 uppercase tracking-wider whitespace-nowrap">Tarih</th>
-                                <th scope="col" class="px-4 py-4 text-left text-xs font-bold text-slate-400 uppercase tracking-wider min-w-[200px]">Yarış Adı</th>
-                                <th scope="col" class="px-4 py-4 text-left text-xs font-bold text-slate-400 uppercase tracking-wider min-w-[150px]">Lokasyon</th>
-                                <th scope="col" class="px-4 py-4 text-left text-xs font-bold text-slate-400 uppercase tracking-wider">Mesafe</th>
-                                <th scope="col" class="px-4 py-4 text-left text-xs font-bold text-slate-400 uppercase tracking-wider">Kategori</th>
-                                <th scope="col" class="relative px-4 py-4"><span class="sr-only">Git</span></th>
+                                <th scope="col" class="w-[15%] md:w-[12%] px-2 md:px-4 py-3 text-left text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-wider">Tarih</th>
+                                <th scope="col" class="w-[35%] md:w-[30%] px-2 md:px-4 py-3 text-left text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-wider">Yarış Adı</th>
+                                <th scope="col" class="w-[20%] md:w-[20%] px-2 md:px-4 py-3 text-left text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-wider">Lokasyon</th>
+                                <th scope="col" class="w-[15%] md:w-[15%] px-2 md:px-4 py-3 text-left text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-wider">Mesafe</th>
+                                <th scope="col" class="hidden md:table-cell w-[15%] px-2 md:px-4 py-3 text-left text-[10px] md:text-xs font-bold text-slate-400 uppercase tracking-wider">Kategori</th>
+                                <th scope="col" class="w-[10%] md:w-[8%] relative px-2 md:px-4 py-3"><span class="sr-only">Git</span></th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-800 bg-slate-900">
@@ -544,31 +544,38 @@
                                 <tr class="hover:bg-slate-800/50 transition-colors group cursor-pointer" 
                                     :class="{'opacity-50 grayscale': isPast(race.parsedDate)}"
                                     @click="openRaceModal(race)">
-                                    <td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-slate-300" x-text="race.date"></td>
-                                    <td class="px-4 py-4">
-                                        <div class="text-sm font-bold text-slate-200 group-hover:text-orange-400 transition-colors" x-text="race.name"></div>
-                                        <div class="flex gap-1 mt-1">
+                                    <td class="px-2 md:px-4 py-3 text-[10px] md:text-sm font-medium text-slate-300 align-top break-words" x-text="race.date"></td>
+                                    
+                                    <td class="px-2 md:px-4 py-3 align-top">
+                                        <div class="text-[11px] md:text-sm font-bold text-slate-200 group-hover:text-orange-400 transition-colors break-words leading-tight" x-text="race.name"></div>
+                                        <div class="md:hidden flex items-center mt-1 space-x-1">
+                                            <span class="text-xs" x-text="race.icon"></span>
+                                            <span class="text-[9px] text-slate-500" x-text="race.type"></span>
+                                        </div>
+                                        <div class="flex flex-wrap gap-1 mt-1">
                                             <template x-for="tag in race.tags">
-                                                <span class="text-[9px] px-1.5 py-0.5 bg-slate-800 border border-slate-700 rounded text-slate-400 font-semibold whitespace-nowrap" x-text="tag"></span>
+                                                <span class="text-[8px] md:text-[9px] px-1 py-0.5 bg-slate-800 border border-slate-700 rounded text-slate-400 font-semibold whitespace-nowrap" x-text="tag"></span>
                                             </template>
                                         </div>
                                     </td>
-                                    <td class="px-4 py-4 whitespace-nowrap text-sm text-slate-400">
-                                        <div class="flex items-center">
-                                            <span x-text="race.location"></span>
-                                        </div>
+
+                                    <td class="px-2 md:px-4 py-3 text-[10px] md:text-sm text-slate-400 align-top break-words">
+                                        <span x-text="race.location"></span>
                                     </td>
-                                    <td class="px-4 py-4 text-sm text-slate-400 whitespace-nowrap" x-text="race.distance"></td>
-                                    <td class="px-4 py-4 whitespace-nowrap">
+
+                                    <td class="px-2 md:px-4 py-3 text-[10px] md:text-sm text-slate-400 align-top break-words" x-text="race.distance"></td>
+
+                                    <td class="hidden md:table-cell px-2 md:px-4 py-3 align-top">
                                         <span class="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-full border whitespace-nowrap shadow-sm backdrop-blur-sm" 
                                             :class="getTypeColor(race.type)">
                                             <span class="mr-1" x-text="race.icon"></span>
                                             <span x-text="race.type"></span>
                                         </span>
                                     </td>
-                                    <td class="px-4 py-4 whitespace-nowrap text-right text-sm font-medium">
+
+                                    <td class="px-2 md:px-4 py-3 text-right align-middle">
                                         <span class="text-slate-400 hover:text-orange-400 flex items-center justify-end transition-colors">
-                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                            <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                                         </span>
                                     </td>
                                 </tr>
