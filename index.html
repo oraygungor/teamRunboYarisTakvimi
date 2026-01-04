@@ -22,8 +22,9 @@
         ::-webkit-scrollbar-thumb:hover { background: #64748b; }
 
         /* Takvim Hücresi */
-        .calendar-cell { min-height: 100px; transition: all 0.2s; }
-        .calendar-cell:hover { background-color: #1e293b; } /* Koyu hover */
+        .calendar-cell { transition: all 0.2s; }
+        .calendar-cell:hover { background-color: #1e293b; }
+        
         .calendar-event { 
             font-size: 0.7rem; 
             white-space: nowrap; 
@@ -36,13 +37,15 @@
 
         [x-cloak] { display: none !important; }
         
-        /* Gradient Text Animasyonu */
         .text-gradient {
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: linear-gradient(to right, #fb923c, #e879f9);
         }
+        
+        /* Tarih Input İkon Rengi Düzeltmesi (Dark Mode) */
+        ::-webkit-calendar-picker-indicator { filter: invert(1); opacity: 0.6; cursor: pointer; }
     </style>
 
     <!-- Uygulama Mantığı -->
@@ -53,6 +56,8 @@
                 search: '',
                 category: 'all',
                 selectedCountry: 'all',
+                startDate: '', // Tarih filtresi
+                endDate: '', // Tarih filtresi
                 loading: true,
                 error: null,
                 isSampleData: false,
@@ -62,11 +67,13 @@
                 currentDate: new Date(),
                 monthNames: ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'],
                 
-                // Modal Durumu
-                modalOpen: false,
+                // Modal Durumları
+                raceModalOpen: false,
+                dayModalOpen: false,
                 selectedRace: null,
+                selectedDayEvents: [],
+                selectedDayDate: null,
 
-                // Kategori tanımları ve ikonlar
                 categories: [
                     { id: 'all', label: 'Tüm Türler', icon: '🎯' },
                     { id: 'Patika', label: 'Patika Koşusu', icon: '🌲' },
@@ -80,12 +87,12 @@
                     this.loading = true;
                     this.error = null;
                     
-                    // Örnek Veriler (Fallback)
                     const sampleRaces = [
                         { "id": 101, "type": "Patika", "icon": "🌳", "name": "Örnek: İznik Ultra", "date": "10-12.04.2026", "location": "Bursa, İznik", "distance": "160K", "link": "#", "tags": ["TR"] },
                         { "id": 102, "type": "Yol", "icon": "🛣️", "name": "Örnek: Paris Maratonu", "date": "12.04.2026", "location": "Fransa, Paris", "distance": "42K", "link": "#", "tags": ["Int"] },
                         { "id": 103, "type": "Bisiklet", "icon": "🚴", "name": "Örnek: Velotürk Gran Fondo", "date": "05.09.2026", "location": "İzmir, Çeşme", "distance": "100K", "link": "#", "tags": ["TR"] },
                         { "id": 104, "type": "Yüzme", "icon": "🏊", "name": "Örnek: Boğaziçi Kıtalararası", "date": "20.07.2026", "location": "İstanbul", "distance": "6.5K", "link": "#", "tags": ["TR"] },
+                        { "id": 105, "type": "Patika", "icon": "🌋", "name": "Örnek: Erciyes Ultra", "date": "10-12.04.2026", "location": "Kayseri", "distance": "60K", "link": "#", "tags": ["TR"] }
                     ];
 
                     try {
@@ -124,17 +131,39 @@
                     this.lastUpdate = new Date().toLocaleDateString('tr-TR');
                 },
 
-                // Modal İşlemleri
-                openModal(race) {
+                // Yarış Detay Modalı
+                openRaceModal(race) {
                     this.selectedRace = race;
-                    this.modalOpen = true;
-                    document.body.style.overflow = 'hidden'; // Arka plan kaydırmayı engelle
+                    this.dayModalOpen = false; // Gün modalı açıksa kapat
+                    this.raceModalOpen = true;
+                    document.body.style.overflow = 'hidden';
                 },
 
-                closeModal() {
-                    this.modalOpen = false;
+                closeRaceModal() {
+                    this.raceModalOpen = false;
                     this.selectedRace = null;
-                    document.body.style.overflow = '';
+                    if (!this.dayModalOpen) document.body.style.overflow = '';
+                },
+
+                // Gün Detay Modalı (Birden fazla yarış varsa)
+                openDayModal(date, events) {
+                    if (events.length === 0) return;
+                    // Eğer sadece 1 yarış varsa direkt detayını aç
+                    if (events.length === 1 && window.innerWidth < 768) { // Mobilde tek tıklama ile aç
+                        this.openRaceModal(events[0]);
+                        return;
+                    }
+                    
+                    this.selectedDayDate = date;
+                    this.selectedDayEvents = events;
+                    this.dayModalOpen = true;
+                    document.body.style.overflow = 'hidden';
+                },
+
+                closeDayModal() {
+                    this.dayModalOpen = false;
+                    this.selectedDayEvents = [];
+                    if (!this.raceModalOpen) document.body.style.overflow = '';
                 },
 
                 getViewTitle() {
@@ -163,7 +192,20 @@
                             matchesCountry = race.country !== 'Türkiye';
                         }
 
-                        return matchesSearch && matchesCategory && matchesCountry;
+                        // Tarih Filtresi
+                        let matchesDate = true;
+                        if (race.parsedDate) {
+                            if (this.startDate) {
+                                const start = new Date(this.startDate);
+                                if (race.parsedDate < start) matchesDate = false;
+                            }
+                            if (this.endDate && matchesDate) {
+                                const end = new Date(this.endDate);
+                                if (race.parsedDate > end) matchesDate = false;
+                            }
+                        }
+
+                        return matchesSearch && matchesCategory && matchesCountry && matchesDate;
                     });
                 },
 
@@ -225,6 +267,11 @@
                            date.getFullYear() === today.getFullYear();
                 },
 
+                formatDate(date) {
+                    if(!date) return '';
+                    return date.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric', weekday: 'long' });
+                },
+
                 parseDateString(dateStr) {
                     if (!dateStr) return null;
                     try {
@@ -241,7 +288,7 @@
                 },
 
                 getTypeColor(type) {
-                    if (!type) return 'bg-slate-800 text-slate-300 border-slate-700'; // Default
+                    if (!type) return 'bg-slate-800 text-slate-300 border-slate-700'; 
                     if (type.includes('Patika') || type.includes('Dağ')) return 'bg-emerald-900/40 text-emerald-400 border-emerald-500/30';
                     if (type.includes('Yol')) return 'bg-blue-900/40 text-blue-400 border-blue-500/30';
                     if (type.includes('Yüzme')) return 'bg-cyan-900/40 text-cyan-400 border-cyan-500/30';
@@ -266,8 +313,7 @@
 <body class="bg-slate-950 text-slate-200 flex flex-col min-h-screen" x-data="raceApp">
 
     <!-- Hero Header -->
-    <header class="relative bg-slate-900 pb-36 pt-12 overflow-hidden border-b border-slate-800">
-        <!-- Dekoratif Arkaplan Efektleri -->
+    <header class="relative bg-slate-900 pb-44 pt-12 overflow-hidden border-b border-slate-800">
         <div class="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
             <div class="absolute right-0 top-0 w-[500px] h-[500px] bg-orange-600/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/4"></div>
             <div class="absolute left-0 bottom-0 w-[400px] h-[400px] bg-blue-600/20 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/4"></div>
@@ -278,22 +324,21 @@
                 <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_10px_rgba(16,185,129,0.5)]"></span>
                 <span class="text-xs font-medium text-slate-300" x-text="lastUpdate">Yükleniyor...</span>
             </div>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 text-white drop-shadow-xl">
+            <h1 class="text-3xl md:text-6xl font-extrabold tracking-tight mb-4 text-white drop-shadow-xl">
                 Team RunBo <span class="text-gradient">Yarış Takvimi</span>
             </h1>
-            <p class="text-base md:text-lg text-slate-400 max-w-2xl mx-auto font-light px-2">
+            <p class="text-sm md:text-lg text-slate-400 max-w-2xl mx-auto font-light px-2">
                 Türkiye ve dünyadan en güncel <span class="text-emerald-400">koşu</span>, <span class="text-cyan-400">yüzme</span> ve <span class="text-fuchsia-400">bisiklet</span> etkinliklerini keşfet.
             </p>
         </div>
     </header>
 
     <!-- Ana Kontrol Paneli (Sticky) -->
-    <div class="sticky top-2 z-40 px-2 sm:px-6 lg:px-8 -mt-24 mb-8">
-        <div class="max-w-7xl mx-auto bg-slate-900/90 backdrop-blur-xl border border-slate-700/60 shadow-2xl shadow-black/50 rounded-2xl p-3 sm:p-5 flex flex-col gap-3 transition-all duration-300">
+    <div class="sticky top-2 z-40 px-2 sm:px-6 lg:px-8 -mt-32 mb-8">
+        <div class="max-w-7xl mx-auto bg-slate-900/95 backdrop-blur-xl border border-slate-700/60 shadow-2xl shadow-black/50 rounded-2xl p-3 sm:p-5 flex flex-col gap-3 transition-all duration-300">
             
-            <!-- Üst Satır: Filtreler -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-                <!-- Arama -->
+            <!-- Üst Satır: Arama ve Ülke -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div class="relative group">
                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                         <svg class="h-5 w-5 text-slate-500 group-focus-within:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
@@ -302,7 +347,6 @@
                         class="block w-full pl-10 pr-4 py-2.5 bg-slate-800 border border-slate-700 rounded-xl text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition-all shadow-sm">
                 </div>
 
-                <!-- Ülke Filtresi -->
                 <div class="relative">
                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                         <svg class="h-5 w-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
@@ -317,9 +361,25 @@
                         <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </div>
                 </div>
+            </div>
 
-                <!-- Kategori Filtresi -->
+            <!-- Orta Satır: Tarih ve Kategori -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                <!-- Başlangıç Tarihi -->
                 <div class="relative">
+                    <input type="date" x-model="startDate" 
+                        class="block w-full px-3 py-2.5 bg-slate-800 border border-slate-700 rounded-xl text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition-all shadow-sm"
+                        placeholder="Başlangıç">
+                </div>
+                <!-- Bitiş Tarihi -->
+                <div class="relative">
+                    <input type="date" x-model="endDate" 
+                        class="block w-full px-3 py-2.5 bg-slate-800 border border-slate-700 rounded-xl text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-500/50 focus:border-orange-500 transition-all shadow-sm"
+                        placeholder="Bitiş">
+                </div>
+
+                <!-- Kategori (Geniş Ekranda 2 Kolon Kaplar) -->
+                <div class="relative col-span-2 md:col-span-2">
                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                         <svg class="h-5 w-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path></svg>
                     </div>
@@ -364,7 +424,7 @@
     <!-- İçerik Alanı -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-grow w-full pb-16">
         
-        <!-- Veri Uyarısı (Opsiyonel) -->
+        <!-- Veri Uyarısı -->
         <div x-show="isSampleData" x-cloak class="mb-6 bg-amber-900/30 border border-amber-700/50 text-amber-200 px-4 py-3 rounded-xl flex items-center justify-between shadow-sm backdrop-blur-sm">
             <div class="flex items-center">
                 <svg class="w-5 h-5 mr-2 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
@@ -427,10 +487,10 @@
 
                         <!-- Kart Buton -->
                         <div class="p-5 pt-0 mt-auto">
-                            <a :href="race.link" target="_blank" class="flex items-center justify-center w-full px-4 py-3 bg-slate-800 hover:bg-orange-600 hover:text-white border border-slate-700 hover:border-orange-500 text-slate-300 text-sm font-semibold rounded-xl transition-all duration-200 shadow-lg">
+                            <button @click="openRaceModal(race)" class="flex items-center justify-center w-full px-4 py-3 bg-slate-800 hover:bg-orange-600 hover:text-white border border-slate-700 hover:border-orange-500 text-slate-300 text-sm font-semibold rounded-xl transition-all duration-200 shadow-lg">
                                 İncele & Kayıt Ol
                                 <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </template>
@@ -452,7 +512,7 @@
                         </thead>
                         <tbody class="divide-y divide-slate-800 bg-slate-900">
                             <template x-for="race in filteredRaces" :key="race.id">
-                                <tr class="hover:bg-slate-800/50 transition-colors group">
+                                <tr class="hover:bg-slate-800/50 transition-colors group cursor-pointer" @click="openRaceModal(race)">
                                     <td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-slate-300" x-text="race.date"></td>
                                     <td class="px-4 py-4">
                                         <div class="text-sm font-bold text-slate-200 group-hover:text-orange-400 transition-colors" x-text="race.name"></div>
@@ -476,9 +536,9 @@
                                         </span>
                                     </td>
                                     <td class="px-4 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                        <a :href="race.link" target="_blank" class="text-slate-400 hover:text-orange-400 flex items-center justify-end transition-colors">
+                                        <span class="text-slate-400 hover:text-orange-400 flex items-center justify-end transition-colors">
                                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                                        </a>
+                                        </span>
                                     </td>
                                 </tr>
                             </template>
@@ -487,7 +547,7 @@
                 </div>
             </div>
 
-            <!-- GÖRÜNÜM 3: TAKVİM -->
+            <!-- GÖRÜNÜM 3: TAKVİM (Responsive) -->
             <div x-show="view === 'calendar'" x-transition class="bg-slate-900 rounded-2xl shadow-xl border border-slate-800 overflow-hidden">
                 <div class="flex items-center justify-between p-4 border-b border-slate-800 bg-slate-950/50">
                     <button @click="changeMonth(-1)" class="p-2 hover:bg-slate-800 rounded-full transition-colors shadow-sm border border-transparent hover:border-slate-700 text-slate-400 hover:text-white">
@@ -499,33 +559,46 @@
                     </button>
                 </div>
 
-                <div class="overflow-x-auto touch-pan-x">
-                    <div class="min-w-[800px]">
-                        <div class="grid grid-cols-7 border-b border-slate-800 bg-slate-950 text-xs font-semibold text-slate-500 uppercase tracking-wider text-center py-3">
-                            <div>Pzt</div><div>Sal</div><div>Çar</div><div>Per</div><div>Cum</div><div>Cmt</div><div>Paz</div>
-                        </div>
-                        <div class="grid grid-cols-7 bg-slate-800 gap-px border border-slate-800">
-                            <template x-for="(day, index) in calendarDays" :key="index">
-                                <div class="bg-slate-900 min-h-[120px] p-2 relative group transition-colors" 
-                                    :class="{'opacity-30 bg-slate-950': !day.currentMonth, 'hover:bg-slate-800': day.currentMonth}">
-                                    <span class="text-sm font-medium w-7 h-7 flex items-center justify-center rounded-full mb-1" 
-                                        :class="isToday(day.date) ? 'bg-orange-500 text-white shadow-lg shadow-orange-500/50' : 'text-slate-400'"
-                                        x-text="day.day"></span>
-                                    
-                                    <div class="mt-1 space-y-1.5 overflow-y-auto max-h-[90px] custom-scrollbar">
-                                        <template x-for="event in day.events" :key="event.id">
-                                            <!-- Button for Modal -->
-                                            <button @click="openModal(event)" 
-                                            class="w-full text-left block text-[10px] px-2 py-1.5 rounded-md border-l-[3px] truncate transition-all hover:scale-105 hover:z-10 relative shadow-sm cursor-pointer"
+                <!-- Overflow Kaldırıldı: Mobilde Ekranı Tam Kaplar -->
+                <div class="w-full">
+                    <div class="grid grid-cols-7 border-b border-slate-800 bg-slate-950 text-[10px] md:text-xs font-semibold text-slate-500 uppercase tracking-wider text-center py-2 md:py-3">
+                        <div>Pzt</div><div>Sal</div><div>Çar</div><div>Per</div><div>Cum</div><div>Cmt</div><div>Paz</div>
+                    </div>
+                    <div class="grid grid-cols-7 bg-slate-800 gap-px border border-slate-800">
+                        <template x-for="(day, index) in calendarDays" :key="index">
+                            <div class="bg-slate-900 min-h-[80px] md:min-h-[120px] p-1 md:p-2 relative group transition-colors cursor-pointer" 
+                                :class="{'opacity-30 bg-slate-950': !day.currentMonth, 'hover:bg-slate-800': day.currentMonth}"
+                                @click="openDayModal(day.date, day.events)">
+                                
+                                <!-- Gün Numarası -->
+                                <span class="text-xs md:text-sm font-medium w-6 h-6 md:w-7 md:h-7 flex items-center justify-center rounded-full mb-1 mx-auto md:mx-0" 
+                                    :class="isToday(day.date) ? 'bg-orange-500 text-white shadow-lg shadow-orange-500/50' : 'text-slate-400'"
+                                    x-text="day.day"></span>
+                                
+                                <!-- Masaüstü Görünüm: Etkinlik Listesi -->
+                                <div class="hidden md:block mt-1 space-y-1">
+                                    <template x-for="event in day.events.slice(0, 2)" :key="event.id">
+                                        <div class="text-[10px] px-2 py-1 rounded-md border-l-[3px] truncate transition-all hover:scale-105 relative shadow-sm"
                                             :class="getCalendarEventStyle(event.type)"
-                                            :title="event.name + ' (' + event.location + ')'">
-                                                <span x-text="event.icon + ' ' + event.name"></span>
-                                            </button>
-                                        </template>
+                                            :title="event.name">
+                                            <span x-text="event.icon + ' ' + event.name"></span>
+                                        </div>
+                                    </template>
+                                    <!-- Fazla Etkinlik Varsa Sayı Göster -->
+                                    <div x-show="day.events.length > 2" class="text-[10px] text-slate-500 text-center font-medium bg-slate-800 rounded py-0.5">
+                                        +<span x-text="day.events.length - 2"></span> Yarış
                                     </div>
                                 </div>
-                            </template>
-                        </div>
+
+                                <!-- Mobil Görünüm: Sadece Sayı -->
+                                <div class="md:hidden flex flex-col items-center justify-center mt-1">
+                                    <div x-show="day.events.length > 0" class="flex items-center justify-center space-x-1 bg-slate-800 border border-slate-700 rounded-full px-2 py-0.5 shadow-sm">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                                        <span class="text-[10px] text-slate-300 font-bold" x-text="day.events.length"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
                     </div>
                 </div>
             </div>
@@ -543,38 +616,26 @@
                 </div>
                 <h3 class="text-lg font-bold text-slate-300">Sonuç Bulunamadı</h3>
                 <p class="text-slate-500 mt-1">Arama kriterlerinizi değiştirerek tekrar deneyin.</p>
-                <button @click="search = ''; category = 'all'; selectedCountry = 'all'" class="mt-4 text-orange-500 font-medium hover:text-orange-400 hover:underline">Filtreleri Temizle</button>
+                <button @click="search = ''; category = 'all'; selectedCountry = 'all'; startDate = ''; endDate = ''" class="mt-4 text-orange-500 font-medium hover:text-orange-400 hover:underline">Filtreleri Temizle</button>
             </div>
         </div>
 
     </main>
 
-    <!-- Modal Dialog -->
-    <div x-show="modalOpen" x-cloak class="fixed inset-0 z-50 flex items-center justify-center p-4">
-        <!-- Backdrop -->
-        <div x-show="modalOpen" 
-             x-transition:enter="transition ease-out duration-300"
-             x-transition:enter-start="opacity-0"
-             x-transition:enter-end="opacity-100"
-             x-transition:leave="transition ease-in duration-200"
-             x-transition:leave-start="opacity-100"
-             x-transition:leave-end="opacity-0"
-             class="fixed inset-0 bg-black/70 backdrop-blur-sm" 
-             @click="closeModal()"></div>
+    <!-- Yarış Detay Modalı -->
+    <div x-show="raceModalOpen" x-cloak class="fixed inset-0 z-[60] flex items-center justify-center p-4">
+        <div x-show="raceModalOpen" 
+             class="fixed inset-0 bg-black/80 backdrop-blur-sm transition-opacity" 
+             @click="closeRaceModal()"></div>
 
-        <!-- Modal Content -->
-        <div x-show="modalOpen" 
+        <div x-show="raceModalOpen" 
              x-transition:enter="transition ease-out duration-300"
              x-transition:enter-start="opacity-0 scale-95 translate-y-4"
              x-transition:enter-end="opacity-100 scale-100 translate-y-0"
-             x-transition:leave="transition ease-in duration-200"
-             x-transition:leave-start="opacity-100 scale-100 translate-y-0"
-             x-transition:leave-end="opacity-0 scale-95 translate-y-4"
-             class="relative bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl w-full max-w-lg overflow-hidden">
+             class="relative bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl w-full max-w-lg overflow-hidden transform transition-all">
             
             <template x-if="selectedRace">
                 <div>
-                    <!-- Modal Header -->
                     <div class="px-6 py-4 border-b border-slate-800 flex justify-between items-start bg-slate-800/50">
                         <div>
                             <div class="flex items-center space-x-2 text-sm font-semibold text-slate-400 mb-1">
@@ -583,12 +644,11 @@
                             </div>
                             <h3 class="text-xl font-bold text-white leading-tight" x-text="selectedRace.name"></h3>
                         </div>
-                        <button @click="closeModal()" class="text-slate-400 hover:text-white transition-colors">
+                        <button @click="closeRaceModal()" class="text-slate-400 hover:text-white transition-colors bg-slate-800 rounded-full p-1">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                         </button>
                     </div>
 
-                    <!-- Modal Body -->
                     <div class="p-6 space-y-4">
                         <div class="flex items-start text-slate-300">
                             <svg class="w-5 h-5 mr-3 mt-0.5 text-slate-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
@@ -626,7 +686,6 @@
                         </div>
                     </div>
 
-                    <!-- Modal Footer -->
                     <div class="p-6 pt-2">
                         <a :href="selectedRace.link" target="_blank" class="flex items-center justify-center w-full px-4 py-3 bg-orange-600 hover:bg-orange-700 text-white text-sm font-bold rounded-xl transition-all duration-200 shadow-lg shadow-orange-900/20">
                             Yarış Sayfasına Git
@@ -635,6 +694,42 @@
                     </div>
                 </div>
             </template>
+        </div>
+    </div>
+
+    <!-- Gün Detay Modalı (Liste) -->
+    <div x-show="dayModalOpen" x-cloak class="fixed inset-0 z-50 flex items-center justify-center p-4">
+        <div x-show="dayModalOpen" class="fixed inset-0 bg-black/80 backdrop-blur-sm transition-opacity" @click="closeDayModal()"></div>
+
+        <div x-show="dayModalOpen" 
+             x-transition:enter="transition ease-out duration-300"
+             x-transition:enter-start="opacity-0 scale-95"
+             x-transition:enter-end="opacity-100 scale-100"
+             class="relative bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl w-full max-w-md overflow-hidden max-h-[80vh] flex flex-col">
+            
+            <div class="px-5 py-4 border-b border-slate-800 flex justify-between items-center bg-slate-800/50 shrink-0">
+                <h3 class="text-lg font-bold text-white" x-text="formatDate(selectedDayDate)"></h3>
+                <button @click="closeDayModal()" class="text-slate-400 hover:text-white bg-slate-800 rounded-full p-1">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+
+            <div class="p-4 overflow-y-auto custom-scrollbar">
+                <div class="space-y-3">
+                    <template x-for="race in selectedDayEvents" :key="race.id">
+                        <div @click="openRaceModal(race)" class="bg-slate-800/50 border border-slate-700 rounded-xl p-3 hover:bg-slate-800 transition-colors cursor-pointer flex items-center justify-between group">
+                            <div class="flex items-center space-x-3">
+                                <span class="text-2xl" x-text="race.icon"></span>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-200 group-hover:text-orange-400 transition-colors" x-text="race.name"></h4>
+                                    <p class="text-xs text-slate-500" x-text="race.location"></p>
+                                </div>
+                            </div>
+                            <svg class="w-4 h-4 text-slate-600 group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </div>
+                    </template>
+                </div>
+            </div>
         </div>
     </div>
 
