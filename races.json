@@ -4591,6 +4591,20 @@
   },
   {
     "id": 346,
+    "type": "Patika",
+    "icon": "🌳",
+    "name": "İda Ultra",
+    "date": "28-29.11.2026",
+    "location": "Balıkesir, Edremit",
+    "distance": "8,5K, 15K, 36K, 66K, 109K",
+    "link": "https://www.idaultra.com/",
+    "tags": [
+      "TR"
+    ],
+    "notes": "🇹🇷RR2021RR2018VLOG"
+  },
+  {
+    "id": 347,
     "type": "Yol",
     "icon": "🛣",
     "name": "Firenze Marathon",
@@ -4602,7 +4616,7 @@
     "notes": ""
   },
   {
-    "id": 347,
+    "id": 348,
     "type": "Patika",
     "icon": "🌳",
     "name": "Geyik Koşuları",
@@ -4614,20 +4628,6 @@
       "TR"
     ],
     "notes": "🇹🇷 √RR2020RÖP2019VLOG1VLOG2"
-  },
-  {
-    "id": 348,
-    "type": "Patika",
-    "icon": "🌳",
-    "name": "İda Ultra",
-    "date": "05.12.2026 TBC",
-    "location": "Balıkesir, Edremit",
-    "distance": "8,5K, 15K, 36K, 66K, 109K",
-    "link": "https://www.idaultra.com/",
-    "tags": [
-      "TR"
-    ],
-    "notes": "🇹🇷RR2021RR2018VLOG"
   },
   {
     "id": 349,
