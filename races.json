@@ -212,9 +212,10 @@
     "distance": "5K, 10K, 22K, 34K, 60K, Sevgililer Koşusu 5K, Çocuk Koşusu",
     "link": "https://www.bodrun.org/",
     "tags": [
-      "TR"
+      "TR",
+      "UTMB"
     ],
-    "notes": "🇹🇷 ITRARR2016"
+    "notes": "🇹🇷 ITRA UTMB INDEXRR2016"
   },
   {
     "id": 17,
@@ -569,9 +570,10 @@
     "link": "https://www.hermesentry.com/dashboard/race/lidya-kral-yolu-kosusu/",
     "tags": [
       "TR",
+      "UTMB",
       "YENİ"
     ],
-    "notes": "🇹🇷 (YENİ 🎈)"
+    "notes": "🇹🇷 (YENİ 🎈) ITRA UTMB INDEX"
   },
   {
     "id": 45,
@@ -698,9 +700,10 @@
     "distance": "6K, 12K, 27K, 42K, 61K,120K",
     "link": "https://www.efesultra.org/",
     "tags": [
-      "TR"
+      "TR",
+      "UTMB"
     ],
-    "notes": "🇹🇷 ITRA √RR2023"
+    "notes": "🇹🇷 ITRA UTMB INDEX √RR2023"
   },
   {
     "id": 55,
@@ -974,7 +977,7 @@
     "tags": [
       "TR"
     ],
-    "notes": "🇹🇷 ♥ √RR2023RURR2021RR2019RR2018RR2017vlog2019"
+    "notes": "🇹🇷 ITRA ♥ √RR2023RURR2021RR2019RR2018RR2017vlog2019"
   },
   {
     "id": 75,
@@ -1439,7 +1442,7 @@
       "TR",
       "YENİ"
     ],
-    "notes": "🇹🇷 (YENİ 🎈)"
+    "notes": "🇹🇷 (YENİ 🎈) ITRA"
   },
   {
     "id": 110,
@@ -1838,20 +1841,6 @@
   },
   {
     "id": 140,
-    "type": "Yüzme",
-    "icon": "🏊‍♀️",
-    "name": "Göcek Open Water",
-    "date": "09.05.2026",
-    "location": "Muğla",
-    "distance": "1K, 2K, 4K, 6K, Combo",
-    "link": "https://sporfest.com.tr/tum-yarislar/111",
-    "tags": [
-      "TR"
-    ],
-    "notes": "🇹🇷"
-  },
-  {
-    "id": 141,
     "type": "Yol",
     "icon": "🛣",
     "name": "Çeşme Yarı Maratonu",
@@ -1865,7 +1854,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 142,
+    "id": 141,
     "type": "Yol",
     "icon": "🏊‍♀️🚵‍♂️🛣",
     "name": "Gelibolu Orta Mesafe Triatlonu",
@@ -1873,6 +1862,20 @@
     "location": "Çanakkale",
     "distance": "",
     "link": "https://portal.triatlon.org.tr/tr/portal/list/",
+    "tags": [
+      "TR"
+    ],
+    "notes": "🇹🇷"
+  },
+  {
+    "id": 142,
+    "type": "Yüzme",
+    "icon": "🏊‍♀️",
+    "name": "Göcek Open Water",
+    "date": "09-10.05.2026",
+    "location": "Muğla",
+    "distance": "1K, 2K, 4K, 6K, Combo",
+    "link": "https://sporfest.com.tr/tum-yarislar/111",
     "tags": [
       "TR"
     ],
@@ -2116,9 +2119,10 @@
     "distance": "1,5K VK Kale Koşusu, 6K,12K, 22K, 38K, 54K",
     "link": "https://www.frigultra.org/",
     "tags": [
-      "TR"
+      "TR",
+      "UTMB"
     ],
-    "notes": "🇹🇷 ITRARR2019VLOG2019"
+    "notes": "🇹🇷 ITRA UTMB INDEXRR2019VLOG2019"
   },
   {
     "id": 161,
@@ -2132,7 +2136,7 @@
     "tags": [
       "TR"
     ],
-    "notes": "🇹🇷 √One Hundred World Tour"
+    "notes": "🇹🇷 ITRA √One Hundred World Tour"
   },
   {
     "id": 162,
@@ -2485,6 +2489,21 @@
   },
   {
     "id": 188,
+    "type": "Patika",
+    "icon": "🌳",
+    "name": "Karageçit Trail",
+    "date": "07.06.2026",
+    "location": "Mersin, Kadıncık Barajı",
+    "distance": "8K, 15K, 38K, 50K (YENİ PARKUR)",
+    "link": "https://karagecittrail.com/",
+    "tags": [
+      "TR",
+      "YENİ"
+    ],
+    "notes": "🇹🇷 ITRAYENİ TARİH!"
+  },
+  {
+    "id": 189,
     "type": "Yol",
     "icon": "🏊‍♀️🚵‍♂️🛣",
     "name": "IRONMAN HAMBURG",
@@ -2496,7 +2515,7 @@
     "notes": ""
   },
   {
-    "id": 189,
+    "id": 190,
     "type": "Patika",
     "icon": "🌳",
     "name": "Trail 100 Andorra by UTMB",
@@ -2510,7 +2529,7 @@
     "notes": "*UTMBWS*"
   },
   {
-    "id": 190,
+    "id": 191,
     "type": "Patika",
     "icon": "🌳",
     "name": "Trail du Saint – Jacques by UTMB",
@@ -2524,7 +2543,7 @@
     "notes": "*UTMBWS*"
   },
   {
-    "id": 191,
+    "id": 192,
     "type": "Patika",
     "icon": "🌳",
     "name": "South Downs Way 100",
@@ -2536,7 +2555,7 @@
     "notes": "*WTM*"
   },
   {
-    "id": 192,
+    "id": 193,
     "type": "Patika",
     "icon": "🌳",
     "name": "Sapanca Ultra Marathon",
@@ -2545,12 +2564,13 @@
     "distance": "6K, 14K, 22K, 40K, 55K (YENİ PARKUR)",
     "link": "https://www.sapancaultra.org/",
     "tags": [
-      "TR"
+      "TR",
+      "UTMB"
     ],
-    "notes": "🇹🇷 ITRARR"
+    "notes": "🇹🇷 ITRA UTMB INDEXRR"
   },
   {
-    "id": 193,
+    "id": 194,
     "type": "Yol",
     "icon": "🏊‍♀️🛣",
     "name": "Paros Way Run Swim Aquathlon",
@@ -2562,7 +2582,7 @@
     "notes": ""
   },
   {
-    "id": 194,
+    "id": 195,
     "type": "Patika",
     "icon": "🌳",
     "name": "HMDS Half Marathon des Sables Cappadocia",
@@ -2576,7 +2596,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 195,
+    "id": 196,
     "type": "Yol",
     "icon": "🛣",
     "name": "Oyak Yarı Maratonu",
@@ -2591,7 +2611,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 196,
+    "id": 197,
     "type": "Patika",
     "icon": "🌳",
     "name": "Zugspitz Ultra Trail by UTMB",
@@ -2605,7 +2625,7 @@
     "notes": "*UTMBWS* ♥"
   },
   {
-    "id": 197,
+    "id": 198,
     "type": "Patika",
     "icon": "🌳",
     "name": "Broken Arrow",
@@ -2617,7 +2637,7 @@
     "notes": "♥"
   },
   {
-    "id": 198,
+    "id": 199,
     "type": "Patika",
     "icon": "🌳",
     "name": "Trakya Ultra",
@@ -2631,7 +2651,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 199,
+    "id": 200,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Yading Skyrace",
@@ -2641,20 +2661,6 @@
     "link": "https://www.cnmtntrails.com/yading-skyrun",
     "tags": [],
     "notes": "SKYRACE WS 🔴"
-  },
-  {
-    "id": 200,
-    "type": "Patika",
-    "icon": "🌳",
-    "name": "Karageçit Trail",
-    "date": "21.06.2026",
-    "location": "Mersin, Kadıncık Barajı",
-    "distance": "8K, 15K, 38K, 50K (YENİ PARKUR)",
-    "link": "https://karagecittrail.com/",
-    "tags": [
-      "TR"
-    ],
-    "notes": "🇹🇷 ITRA"
   },
   {
     "id": 201,
@@ -4527,9 +4533,10 @@
     "distance": "10K, 17K, 26K, 45K",
     "link": "https://gotix.com.tr/#/activity_detail?activity_id=28",
     "tags": [
-      "TR"
+      "TR",
+      "UTMB"
     ],
-    "notes": "🇹🇷RR2019VLOG2019"
+    "notes": "🇹🇷 UTMB INDEXRR2019VLOG2019"
   },
   {
     "id": 342,
@@ -4632,20 +4639,6 @@
   },
   {
     "id": 349,
-    "type": "Patika",
-    "icon": "🌳",
-    "name": "İda Ultra",
-    "date": "28-29.11.2026",
-    "location": "Balıkesir, Edremit",
-    "distance": "8,5K, 15K, 36K, 66K, 109K",
-    "link": "https://www.idaultra.com/",
-    "tags": [
-      "TR"
-    ],
-    "notes": "🇹🇷RR2021RR2018VLOG"
-  },
-  {
-    "id": 350,
     "type": "Yol",
     "icon": "🛣",
     "name": "Firenze Marathon",
@@ -4657,7 +4650,7 @@
     "notes": ""
   },
   {
-    "id": 351,
+    "id": 350,
     "type": "Patika",
     "icon": "🌳",
     "name": "Geyik Koşuları",
@@ -4669,6 +4662,20 @@
       "TR"
     ],
     "notes": "🇹🇷 √RR2020RÖP2019VLOG1VLOG2"
+  },
+  {
+    "id": 351,
+    "type": "Patika",
+    "icon": "🌳",
+    "name": "İda Ultra",
+    "date": "05.12.2026",
+    "location": "Balıkesir, Edremit",
+    "distance": "8,5K, 15K, 36K, 66K, 109K",
+    "link": "https://www.idaultra.com/",
+    "tags": [
+      "TR"
+    ],
+    "notes": "🇹🇷 ITRARR2021RR2018VLOG"
   },
   {
     "id": 352,
@@ -4727,14 +4734,15 @@
     "type": "Patika",
     "icon": "🌳",
     "name": "Antalya Ultra",
-    "date": "25-27.12.2026",
+    "date": "26-27.12.2026",
     "location": "Antalya, Konyaaltı",
     "distance": "5K, 12K, 22K, 33K, 57K, 85K",
     "link": "http://www.antalyaultra.org/",
     "tags": [
-      "TR"
+      "TR",
+      "UTMB"
     ],
-    "notes": "🇹🇷"
+    "notes": "🇹🇷 UTMB INDEX"
   },
   {
     "id": 357,
