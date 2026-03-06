@@ -4180,8 +4180,8 @@
     "name": "St Nicholas Half Marathon",
     "date": "11.10.2026",
     "location": "Antalya, Demre",
-    "distance": "10K, 21K",
-    "link": "www.stnicholashalfmarathon.com",
+    "distance": "5K, 12K, 21K",
+    "link": "https://www.stnicholashalfmarathon.com/tr",
     "tags": [
       "TR",
       "YENİ"
@@ -4855,7 +4855,7 @@
     "date": "22.11.2026",
     "location": "Gaziantep",
     "distance": "10K, 21K",
-    "link": "https://gaziyarimaratonu.org/",
+    "link": "https://gaziyarimaratonu.gaziantep.bel.tr/",
     "tags": [
       "TR"
     ],
@@ -8908,7 +8908,7 @@
     "date": "30.11.2025",
     "location": "Gaziantep",
     "distance": "10K, 21K",
-    "link": "https://gaziyarimaratonu.org/",
+    "link": "https://gaziyarimaratonu.gaziantep.bel.tr/",
     "tags": [
       "TR"
     ],
