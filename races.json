@@ -215,7 +215,7 @@
       "TR",
       "YENİ"
     ],
-    "notes": "🇹🇷 (YENİ 🎈)"
+    "notes": "🇹🇷 (YENİ 🎈) Henüz yarış ile ilgili güncel bilgi yok. TBC."
   },
   {
     "id": 17,
@@ -902,9 +902,10 @@
     "link": "http://www.mudurnumountaintrail.org/index.html",
     "tags": [
       "TR",
+      "İPTAL/ERTELEME",
       "YENİ"
     ],
-    "notes": "🇹🇷 (YENİ 🎈) ITRA"
+    "notes": "🇹🇷 (YENİ 🎈) ITRA2027’ye ERTELENDİ!"
   },
   {
     "id": 68,
@@ -1178,10 +1179,9 @@
     "distance": "5K, 10K",
     "link": "https://istanbulukosuyorum.istanbul/",
     "tags": [
-      "TR",
-      "YENİ"
+      "TR"
     ],
-    "notes": "🇹🇷YENİ TARİH!"
+    "notes": "🇹🇷"
   },
   {
     "id": 89,
@@ -1193,10 +1193,9 @@
     "distance": "5K, 10K, 20K, 44K (YENİ)",
     "link": "https://www.aydosultra.com/",
     "tags": [
-      "TR",
-      "YENİ"
+      "TR"
     ],
-    "notes": "🇹🇷 ITRAYENİ TARİH!"
+    "notes": "🇹🇷 ITRA"
   },
   {
     "id": 90,
@@ -3073,7 +3072,7 @@
     "date": "01.08.2026",
     "location": "Konya, Sille",
     "distance": "5K, 15K, 30K, 54K, 75K",
-    "link": "https://www.sporkonya.com.tr/",
+    "link": "#",
     "tags": [
       "TR",
       "YENİ"
