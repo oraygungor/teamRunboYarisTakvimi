@@ -1099,10 +1099,10 @@
     "id": 81,
     "type": "Yol",
     "icon": "🛣",
-    "name": "Kıtalararası Yeşilay Avrasya Gece Yarı Maratonu",
+    "name": "Yeşilay Avrasya Gece Yarı Maratonu",
     "date": "21.06.2026",
     "location": "İstanbul",
-    "distance": "21K",
+    "distance": "10K. 21K",
     "link": "https://www.yesilaygeceyarimaratonu.com/",
     "tags": [
       "TR",
