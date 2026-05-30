@@ -1,18 +1,6 @@
 [
   {
     "id": 1,
-    "type": "Diğer",
-    "icon": "❌",
-    "name": "RedBull X Alps Challenger",
-    "date": "28-31.05.2026",
-    "location": "Avusturya",
-    "distance": "Extrem",
-    "link": "https://www.redbullxalps.com/int-en/",
-    "tags": [],
-    "notes": ""
-  },
-  {
-    "id": 2,
     "type": "Patika",
     "icon": "🌳",
     "name": "Mountain Ultra – Trail by UTMB",
@@ -26,7 +14,7 @@
     "notes": "*UTMBWS*"
   },
   {
-    "id": 3,
+    "id": 2,
     "type": "Patika",
     "icon": "🌳",
     "name": "Swiss Canyon Trail",
@@ -38,7 +26,7 @@
     "notes": "*WTM*"
   },
   {
-    "id": 4,
+    "id": 3,
     "type": "Patika",
     "icon": "🌳",
     "name": "Magic Cappadocia Trail",
@@ -54,7 +42,7 @@
     "notes": "🇹🇷 (YENİ 🎈) ITRA UTMB INDEX"
   },
   {
-    "id": 5,
+    "id": 4,
     "type": "Yol",
     "icon": "🛣",
     "name": "Stockholm Marathon",
@@ -66,7 +54,7 @@
     "notes": ""
   },
   {
-    "id": 6,
+    "id": 5,
     "type": "Patika",
     "icon": "🌳",
     "name": "Dead Cow Gully (Backyard Ultra)",
@@ -78,7 +66,7 @@
     "notes": "♥"
   },
   {
-    "id": 7,
+    "id": 6,
     "type": "Patika",
     "icon": "🌳",
     "name": "ITRA Women’s Trail Week",
@@ -92,7 +80,7 @@
     "notes": "🇹🇷 √"
   },
   {
-    "id": 8,
+    "id": 7,
     "type": "Patika",
     "icon": "🌳🚵‍♂️",
     "name": "Tihio Race Ultra Edition",
@@ -104,7 +92,7 @@
     "notes": ""
   },
   {
-    "id": 9,
+    "id": 8,
     "type": "Patika",
     "icon": "🌳",
     "name": "Doca Tirilye Ultra",
@@ -119,7 +107,7 @@
     "notes": "🇹🇷 ITRA UTMB INDEX"
   },
   {
-    "id": 10,
+    "id": 9,
     "type": "Patika",
     "icon": "🌳",
     "name": "Gökçeada Ultra Trail",
@@ -133,7 +121,7 @@
     "notes": "🇹🇷 ITRA"
   },
   {
-    "id": 11,
+    "id": 10,
     "type": "Patika",
     "icon": "🌳",
     "name": "Ultra Sümela",
@@ -147,7 +135,7 @@
     "notes": "🇹🇷 ITRA"
   },
   {
-    "id": 12,
+    "id": 11,
     "type": "Patika",
     "icon": "🌳",
     "name": "İpek Yolu Trail Koşusu",
@@ -161,7 +149,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 13,
+    "id": 12,
     "type": "Patika",
     "icon": "🌳",
     "name": "Sandras Ultra Trail",
@@ -176,7 +164,7 @@
     "notes": "🇹🇷 (YENİ 🎈) ITRA"
   },
   {
-    "id": 14,
+    "id": 13,
     "type": "Patika",
     "icon": "🌳",
     "name": "The Gypaète Trail",
@@ -188,7 +176,7 @@
     "notes": "√"
   },
   {
-    "id": 15,
+    "id": 14,
     "type": "Yüzme",
     "icon": "🏊‍♀️",
     "name": "Aquachallange Yüzme Şampiyonası",
@@ -202,7 +190,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 16,
+    "id": 15,
     "type": "Yol",
     "icon": "🛣",
     "name": "MarmaRun",
@@ -216,7 +204,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 17,
+    "id": 16,
     "type": "Yol",
     "icon": "🛣",
     "name": "One Run İstanbul",
@@ -231,7 +219,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 18,
+    "id": 17,
     "type": "Yol",
     "icon": "🛣",
     "name": "Yaren Leylek Koşusu",
@@ -246,7 +234,7 @@
     "notes": "🇹🇷YENİ TARİH!"
   },
   {
-    "id": 19,
+    "id": 18,
     "type": "Patika",
     "icon": "🌳🛣",
     "name": "Gül Trail",
@@ -261,7 +249,7 @@
     "notes": "🇹🇷YENİ TARİH!"
   },
   {
-    "id": 20,
+    "id": 19,
     "type": "Yol",
     "icon": "🛣",
     "name": "Aslantepe Yarı Maratonu",
@@ -276,7 +264,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 21,
+    "id": 20,
     "type": "Patika",
     "icon": "🌳",
     "name": "Karageçit Trail",
@@ -291,7 +279,7 @@
     "notes": "🇹🇷 ITRAYENİ TARİH!"
   },
   {
-    "id": 22,
+    "id": 21,
     "type": "Yol",
     "icon": "🏊‍♀️🚵‍♂️🛣",
     "name": "Adana Triatlonu",
@@ -306,7 +294,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 23,
+    "id": 22,
     "type": "Yol",
     "icon": "🏊‍♀️🚵‍♂️🛣",
     "name": "IRONMAN HAMBURG",
@@ -318,7 +306,7 @@
     "notes": ""
   },
   {
-    "id": 24,
+    "id": 23,
     "type": "Patika",
     "icon": "🌳",
     "name": "Trail 100 Andorra by UTMB",
@@ -332,7 +320,7 @@
     "notes": "*UTMBWS*"
   },
   {
-    "id": 25,
+    "id": 24,
     "type": "Patika",
     "icon": "🌳",
     "name": "Trail du Saint – Jacques by UTMB",
@@ -346,7 +334,7 @@
     "notes": "*UTMBWS*"
   },
   {
-    "id": 26,
+    "id": 25,
     "type": "Yol",
     "icon": "🛣",
     "name": "MG Gece Koşusu",
@@ -361,7 +349,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 27,
+    "id": 26,
     "type": "Patika",
     "icon": "🌳",
     "name": "South Downs Way 100",
@@ -373,7 +361,7 @@
     "notes": "*WTM*"
   },
   {
-    "id": 28,
+    "id": 27,
     "type": "Patika",
     "icon": "🌳",
     "name": "Sapanca Ultra Marathon",
@@ -388,7 +376,7 @@
     "notes": "🇹🇷 ITRA UTMB INDEXRR"
   },
   {
-    "id": 29,
+    "id": 28,
     "type": "Diğer",
     "icon": "🚣",
     "name": "Dragon Festivali",
@@ -402,7 +390,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 30,
+    "id": 29,
     "type": "Yol",
     "icon": "🏊‍♀️🛣",
     "name": "Paros Way Run Swim Aquathlon",
@@ -414,7 +402,7 @@
     "notes": ""
   },
   {
-    "id": 31,
+    "id": 30,
     "type": "Patika",
     "icon": "🌳",
     "name": "HMDS Half Marathon des Sables Cappadocia",
@@ -428,7 +416,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 32,
+    "id": 31,
     "type": "Yol",
     "icon": "🛣",
     "name": "Oyak 65. Yıl Koşusu",
@@ -443,7 +431,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 33,
+    "id": 32,
     "type": "Yol",
     "icon": "🛣",
     "name": "Edremit Yarı Maratonu",
@@ -458,7 +446,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 34,
+    "id": 33,
     "type": "Yol",
     "icon": "🏊‍♀️🚵‍♂️🛣",
     "name": "Bakırköy Sprint Triatlon",
@@ -473,7 +461,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 35,
+    "id": 34,
     "type": "Patika",
     "icon": "🌳",
     "name": "Grammos Mountain Run",
@@ -485,7 +473,7 @@
     "notes": ""
   },
   {
-    "id": 36,
+    "id": 35,
     "type": "Yol",
     "icon": "🛣",
     "name": "Intersport Başkent Yarı Maratonu",
@@ -501,7 +489,7 @@
     "notes": "🇹🇷 (YENİ 🎈)İPTAL!"
   },
   {
-    "id": 37,
+    "id": 36,
     "type": "Patika",
     "icon": "🌳🏊‍♀️🧘‍♀️",
     "name": "Run & Recharge Camp",
@@ -515,7 +503,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 38,
+    "id": 37,
     "type": "Yol",
     "icon": "🛣🎾⚽🏀🏐🚣🚵‍♀️🏊‍♀️",
     "name": "İstanbul Corporate Games",
@@ -530,7 +518,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 39,
+    "id": 38,
     "type": "Patika",
     "icon": "🌳",
     "name": "Zugspitz Ultra Trail by UTMB",
@@ -544,7 +532,7 @@
     "notes": "*UTMBWS* ♥"
   },
   {
-    "id": 40,
+    "id": 39,
     "type": "Patika",
     "icon": "🌳",
     "name": "Broken Arrow",
@@ -556,7 +544,7 @@
     "notes": "♥"
   },
   {
-    "id": 41,
+    "id": 40,
     "type": "Yol",
     "icon": "🛣",
     "name": "Into the Dark",
@@ -571,7 +559,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 42,
+    "id": 41,
     "type": "Yol",
     "icon": "🛣",
     "name": "Bozcaada Yarı Maratonu",
@@ -585,7 +573,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 43,
+    "id": 42,
     "type": "Patika",
     "icon": "🌳",
     "name": "Trakya Ultra",
@@ -599,7 +587,7 @@
     "notes": "🇹🇷 ITRA"
   },
   {
-    "id": 44,
+    "id": 43,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Yading Skyrace",
@@ -611,7 +599,7 @@
     "notes": "SKYRACE WS 🔴"
   },
   {
-    "id": 45,
+    "id": 44,
     "type": "Yol",
     "icon": "🛣",
     "name": "Yeşilay Avrasya Gece Yarı Maratonu",
@@ -626,7 +614,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 46,
+    "id": 45,
     "type": "Yol",
     "icon": "🛣",
     "name": "European Transplant Games",
@@ -638,7 +626,7 @@
     "notes": ""
   },
   {
-    "id": 47,
+    "id": 46,
     "type": "Patika",
     "icon": "🌳",
     "name": "Lavaredo Ultra Trail by UTMB",
@@ -652,7 +640,7 @@
     "notes": "*UTMBWS* ♥"
   },
   {
-    "id": 48,
+    "id": 47,
     "type": "Patika",
     "icon": "🌳",
     "name": "Mont Blanc Maratonu",
@@ -664,7 +652,7 @@
     "notes": "♥RR2025"
   },
   {
-    "id": 49,
+    "id": 48,
     "type": "Patika",
     "icon": "🌳",
     "name": "Kanyon Ulubey Ultra Trail",
@@ -678,7 +666,7 @@
     "notes": "🇹🇷 ITRA"
   },
   {
-    "id": 50,
+    "id": 49,
     "type": "Oryantiring",
     "icon": "🧭",
     "name": "Cappadocia Trail Challenge",
@@ -693,7 +681,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 51,
+    "id": 50,
     "type": "Patika",
     "icon": "🌳",
     "name": "Olympus Marathon",
@@ -705,7 +693,7 @@
     "notes": "♥ √"
   },
   {
-    "id": 52,
+    "id": 51,
     "type": "Patika",
     "icon": "🌳",
     "name": "Western States Endurance Run",
@@ -719,7 +707,7 @@
     "notes": "*UTMBWS* ♥"
   },
   {
-    "id": 53,
+    "id": 52,
     "type": "Yüzme",
     "icon": "🏊‍♀️",
     "name": "Meis Kaş Swim Race",
@@ -733,7 +721,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 54,
+    "id": 53,
     "type": "Yol",
     "icon": "🛣",
     "name": "Bursa Masterler Dostluk Koşusu",
@@ -747,7 +735,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 55,
+    "id": 54,
     "type": "Patika",
     "icon": "🌳",
     "name": "Aksu Anamas Yayla Trail",
@@ -762,7 +750,7 @@
     "notes": "🇹🇷İPTAL!"
   },
   {
-    "id": 56,
+    "id": 55,
     "type": "Patika",
     "icon": "🌳",
     "name": "Amanos Ultra Trail",
@@ -777,7 +765,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 57,
+    "id": 56,
     "type": "Bisiklet",
     "icon": "🚵‍♂️",
     "name": "Konya Gran Fondo",
@@ -791,7 +779,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 58,
+    "id": 57,
     "type": "Yüzme",
     "icon": "🏊‍♀️",
     "name": "İstanbul’u Yüzüyorum",
@@ -806,7 +794,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 59,
+    "id": 58,
     "type": "Yol",
     "icon": "🛣",
     "name": "Hamburg Half Marathon",
@@ -818,7 +806,7 @@
     "notes": ""
   },
   {
-    "id": 60,
+    "id": 59,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Ibarra SkyRace",
@@ -830,7 +818,7 @@
     "notes": "SKYRACE WS ⚪"
   },
   {
-    "id": 61,
+    "id": 60,
     "type": "Yol",
     "icon": "🏊‍♀️🚵‍♂️🛣",
     "name": "IRONMAN FRANKFURT",
@@ -842,7 +830,7 @@
     "notes": ""
   },
   {
-    "id": 62,
+    "id": 61,
     "type": "Yol",
     "icon": "🛣🏋",
     "name": "Anatolian Warriors",
@@ -857,7 +845,7 @@
     "notes": "🇹🇷 (YENİ 🎈) Ninja Warrior Ödüllü Yarışma"
   },
   {
-    "id": 63,
+    "id": 62,
     "type": "Patika",
     "icon": "🌳",
     "name": "Vald’Aran Pyrenees by UTMB",
@@ -871,7 +859,7 @@
     "notes": "*UTMBWSM*"
   },
   {
-    "id": 64,
+    "id": 63,
     "type": "Patika",
     "icon": "🌳",
     "name": "Salomon Golden Trail Series – Quebec Mega Trail",
@@ -883,7 +871,7 @@
     "notes": "*WTM*"
   },
   {
-    "id": 65,
+    "id": 64,
     "type": "Diğer",
     "icon": "🌋",
     "name": "Palandöken Run to Stars",
@@ -897,7 +885,7 @@
     "notes": "🇹🇷 ITRA"
   },
   {
-    "id": 66,
+    "id": 65,
     "type": "Yol",
     "icon": "🛣",
     "name": "Gece Maratonu",
@@ -912,7 +900,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 67,
+    "id": 66,
     "type": "Patika",
     "icon": "🌳",
     "name": "Ankara Botanik Backyard Ultra",
@@ -927,7 +915,7 @@
     "notes": "🇹🇷 (YENİ 🎈) Yarış henüz Backyard Ultra şemsiye yarış statüsünde değildir."
   },
   {
-    "id": 68,
+    "id": 67,
     "type": "Yol",
     "icon": "🛣",
     "name": "Dolomiti Marathon",
@@ -939,7 +927,7 @@
     "notes": ""
   },
   {
-    "id": 69,
+    "id": 68,
     "type": "Patika",
     "icon": "🌳",
     "name": "Safrun Ultra Trail",
@@ -954,7 +942,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 70,
+    "id": 69,
     "type": "Bisiklet",
     "icon": "🚵‍♂️",
     "name": "Tour de FRANCE",
@@ -966,7 +954,7 @@
     "notes": ""
   },
   {
-    "id": 71,
+    "id": 70,
     "type": "Bisiklet",
     "icon": "🚵‍♂️",
     "name": "Zonguldak Gran Fondo",
@@ -980,7 +968,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 72,
+    "id": 71,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Ultra Trail Cordillera Blanca",
@@ -992,7 +980,7 @@
     "notes": "SKYRACE WS ⚪"
   },
   {
-    "id": 73,
+    "id": 72,
     "type": "Diğer",
     "icon": "🌋",
     "name": "Ararat Sky Race",
@@ -1008,7 +996,7 @@
     "notes": "🇹🇷 (YENİ 🎈)2027’ye ERTELENDİ!"
   },
   {
-    "id": 74,
+    "id": 73,
     "type": "Patika",
     "icon": "🌳",
     "name": "Restonica Trail by UTMB",
@@ -1022,7 +1010,7 @@
     "notes": "*UTMBWS*"
   },
   {
-    "id": 75,
+    "id": 74,
     "type": "Patika",
     "icon": "🌳🛣",
     "name": "Kemaliye Silk Road Ultra Trail Festival",
@@ -1036,7 +1024,7 @@
     "notes": "🇹🇷 √"
   },
   {
-    "id": 76,
+    "id": 75,
     "type": "Patika",
     "icon": "🌳",
     "name": "Ultra Trail Verbier St Bernard by UTMB",
@@ -1050,7 +1038,7 @@
     "notes": "*UTMBWS*"
   },
   {
-    "id": 77,
+    "id": 76,
     "type": "Diğer",
     "icon": "🌋",
     "name": "Hasandağı Ultra Trail",
@@ -1064,7 +1052,7 @@
     "notes": "🇹🇷 ITRA"
   },
   {
-    "id": 78,
+    "id": 77,
     "type": "Yol",
     "icon": "🏊‍♀️🚵‍♂️🛣",
     "name": "Eğirdir Triatlonu Türkiye  Kupası",
@@ -1078,7 +1066,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 79,
+    "id": 78,
     "type": "Yol",
     "icon": "🛣",
     "name": "Körfez Kiraz Koşusu",
@@ -1093,7 +1081,7 @@
     "notes": "🇹🇷İPTAL!"
   },
   {
-    "id": 80,
+    "id": 79,
     "type": "Patika",
     "icon": "🌳",
     "name": "Dolomyths Run",
@@ -1105,7 +1093,7 @@
     "notes": ""
   },
   {
-    "id": 81,
+    "id": 80,
     "type": "Yüzme",
     "icon": "🏊‍♀️",
     "name": "Yalova Açık Su Yüzme Yarışması",
@@ -1120,7 +1108,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 82,
+    "id": 81,
     "type": "Patika",
     "icon": "🌳",
     "name": "Eiger Ultra Trail by UTMB",
@@ -1134,7 +1122,7 @@
     "notes": "*UTMBWS*"
   },
   {
-    "id": 83,
+    "id": 82,
     "type": "Patika",
     "icon": "🌳",
     "name": "Zagori Race",
@@ -1146,7 +1134,7 @@
     "notes": "♥"
   },
   {
-    "id": 84,
+    "id": 83,
     "type": "Patika",
     "icon": "🌳",
     "name": "Monte Rosa Walserwaeg by UTMB",
@@ -1160,7 +1148,7 @@
     "notes": "*UTMBWS*"
   },
   {
-    "id": 85,
+    "id": 84,
     "type": "Patika",
     "icon": "🌳",
     "name": "Uludağ Premium Ultra Trail",
@@ -1175,7 +1163,7 @@
     "notes": "🇹🇷 ITRA UTMB INDEX √RR"
   },
   {
-    "id": 86,
+    "id": 85,
     "type": "Yol",
     "icon": "🛣",
     "name": "Masterlar TR Şampiyonası",
@@ -1189,7 +1177,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 87,
+    "id": 86,
     "type": "Oryantiring",
     "icon": "🧭",
     "name": "TR Patika Şampiyonası",
@@ -1203,7 +1191,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 88,
+    "id": 87,
     "type": "Patika",
     "icon": "🌳",
     "name": "Vauban Mountain Trail",
@@ -1215,7 +1203,7 @@
     "notes": ""
   },
   {
-    "id": 89,
+    "id": 88,
     "type": "Patika",
     "icon": "🌳",
     "name": "Speedgoat by UTMB Mountain Races",
@@ -1229,7 +1217,7 @@
     "notes": "*UTMBWS*"
   },
   {
-    "id": 90,
+    "id": 89,
     "type": "Patika",
     "icon": "🌳",
     "name": "Grossglockner Ultra Trail",
@@ -1241,7 +1229,7 @@
     "notes": "RR"
   },
   {
-    "id": 91,
+    "id": 90,
     "type": "Patika",
     "icon": "🌳",
     "name": "Bucovina Ultra Rocks by UTMB",
@@ -1255,7 +1243,7 @@
     "notes": "*UTMBWS*"
   },
   {
-    "id": 92,
+    "id": 91,
     "type": "Yol",
     "icon": "🛣",
     "name": "Evden bi Koşu İznik",
@@ -1270,7 +1258,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 93,
+    "id": 92,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Salomon Golden Trail Series – Pitz Alpine Glacier Trail",
@@ -1282,7 +1270,7 @@
     "notes": "♥"
   },
   {
-    "id": 94,
+    "id": 93,
     "type": "Patika",
     "icon": "🌳",
     "name": "Konya Ultra Trail",
@@ -1297,7 +1285,7 @@
     "notes": "🇹🇷 (YENİ 🎈) ITRA"
   },
   {
-    "id": 95,
+    "id": 94,
     "type": "Diğer",
     "icon": "🏋",
     "name": "HYROX ISTANBUL",
@@ -1312,7 +1300,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 96,
+    "id": 95,
     "type": "Patika",
     "icon": "🌳",
     "name": "Gauja Trail by UTMB",
@@ -1326,7 +1314,7 @@
     "notes": "*UTMBWS*"
   },
   {
-    "id": 97,
+    "id": 96,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Beast of Big Creek",
@@ -1338,7 +1326,7 @@
     "notes": "SKYRACE WS 🔴"
   },
   {
-    "id": 98,
+    "id": 97,
     "type": "Patika",
     "icon": "🌳",
     "name": "KAT 100 by UTMB",
@@ -1352,7 +1340,7 @@
     "notes": "*UTMBWS*"
   },
   {
-    "id": 99,
+    "id": 98,
     "type": "Patika",
     "icon": "🌳",
     "name": "Swiss Alps 100",
@@ -1364,7 +1352,7 @@
     "notes": ""
   },
   {
-    "id": 100,
+    "id": 99,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Salomon Golden Trail Series –Sierre – Zinal",
@@ -1376,7 +1364,7 @@
     "notes": "♥"
   },
   {
-    "id": 101,
+    "id": 100,
     "type": "Yol",
     "icon": "🛣",
     "name": "Eskişehir Yarı Maratonu",
@@ -1390,7 +1378,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 102,
+    "id": 101,
     "type": "Patika",
     "icon": "🌳",
     "name": "Ultra Abant",
@@ -1404,7 +1392,7 @@
     "notes": "🇹🇷 ITRA"
   },
   {
-    "id": 103,
+    "id": 102,
     "type": "Yol",
     "icon": "🏊‍♀️🚵‍♂️🛣",
     "name": "Uluslararası Boğaziçi Triatlonu",
@@ -1418,7 +1406,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 104,
+    "id": 103,
     "type": "Patika",
     "icon": "🌳",
     "name": "Grand Raid Des Pyrenees",
@@ -1430,7 +1418,7 @@
     "notes": "*WTM* ♥"
   },
   {
-    "id": 105,
+    "id": 104,
     "type": "Diğer",
     "icon": "🌋",
     "name": "Trippy Trail",
@@ -1442,7 +1430,7 @@
     "notes": "Desteksiz bir organizasyon, cut off süresi yok"
   },
   {
-    "id": 106,
+    "id": 105,
     "type": "Patika",
     "icon": "🌳",
     "name": "Runfire Salt Lake  Ultra Trail",
@@ -1457,7 +1445,7 @@
     "notes": "🇹🇷 ITRA UTMB INDEXRR2022RR2018"
   },
   {
-    "id": 107,
+    "id": 106,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Matterhorn Ultraks Extreme",
@@ -1469,7 +1457,7 @@
     "notes": "SKYRACE WS ⚪"
   },
   {
-    "id": 108,
+    "id": 107,
     "type": "Diğer",
     "icon": "🌋",
     "name": "Davraz Sky Run",
@@ -1484,7 +1472,7 @@
     "notes": "🇹🇷YENİ TARİH!"
   },
   {
-    "id": 109,
+    "id": 108,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Trofeo Kima",
@@ -1496,7 +1484,7 @@
     "notes": "SKYRACE WS ⚪"
   },
   {
-    "id": 110,
+    "id": 109,
     "type": "Yüzme",
     "icon": "🏊‍♀️",
     "name": "Boğaziçi Kıtalararası Yüzme Yarışı",
@@ -1510,7 +1498,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 111,
+    "id": 110,
     "type": "Bisiklet",
     "icon": "🚵‍♂️",
     "name": "Gran Fondo Başkent",
@@ -1524,7 +1512,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 112,
+    "id": 111,
     "type": "Yol",
     "icon": "🛣",
     "name": "Chios Sakız Adası Yarı Maratonu",
@@ -1536,7 +1524,7 @@
     "notes": "RR2015♥√"
   },
   {
-    "id": 113,
+    "id": 112,
     "type": "Diğer",
     "icon": "🌋",
     "name": "UTMB PTL",
@@ -1548,7 +1536,7 @@
     "notes": ""
   },
   {
-    "id": 114,
+    "id": 113,
     "type": "Patika",
     "icon": "🌳",
     "name": "UTMB TDS",
@@ -1560,7 +1548,7 @@
     "notes": ""
   },
   {
-    "id": 115,
+    "id": 114,
     "type": "Patika",
     "icon": "🌳",
     "name": "UTMB MCC",
@@ -1572,7 +1560,7 @@
     "notes": ""
   },
   {
-    "id": 116,
+    "id": 115,
     "type": "Patika",
     "icon": "🌳",
     "name": "UTMB ETC",
@@ -1584,7 +1572,7 @@
     "notes": ""
   },
   {
-    "id": 117,
+    "id": 116,
     "type": "Patika",
     "icon": "🌳",
     "name": "UTMB OCC",
@@ -1598,7 +1586,7 @@
     "notes": "*UTMBWS FINALS* √RR2019"
   },
   {
-    "id": 118,
+    "id": 117,
     "type": "Patika",
     "icon": "🌳",
     "name": "UTMB CCC",
@@ -1612,7 +1600,7 @@
     "notes": "*UTMBWS FINALS*"
   },
   {
-    "id": 119,
+    "id": 118,
     "type": "Patika",
     "icon": "🌳",
     "name": "UTMB",
@@ -1626,7 +1614,7 @@
     "notes": "*UTMBWS FINALS*RR2016"
   },
   {
-    "id": 120,
+    "id": 119,
     "type": "Diğer",
     "icon": "🌋",
     "name": "Trans Alpine Run",
@@ -1638,7 +1626,7 @@
     "notes": ""
   },
   {
-    "id": 121,
+    "id": 120,
     "type": "Diğer",
     "icon": "🏍",
     "name": "Trans Anatolia",
@@ -1652,7 +1640,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 122,
+    "id": 121,
     "type": "Yol",
     "icon": "🛣",
     "name": "Muğla Zafer Koşusu",
@@ -1667,7 +1655,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 123,
+    "id": 122,
     "type": "Yüzme",
     "icon": "🏊‍♀️",
     "name": "Çanakkale Boğazı Yüzme Yarışması",
@@ -1681,7 +1669,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 124,
+    "id": 123,
     "type": "Yol",
     "icon": "🛣",
     "name": "Sydney Marathon",
@@ -1693,7 +1681,7 @@
     "notes": ""
   },
   {
-    "id": 125,
+    "id": 124,
     "type": "Patika",
     "icon": "🌳",
     "name": "Ultra Tour Monte Rosa",
@@ -1705,7 +1693,7 @@
     "notes": "RR2018♥√"
   },
   {
-    "id": 126,
+    "id": 125,
     "type": "Patika",
     "icon": "🌳",
     "name": "İstanbul Ultra",
@@ -1721,7 +1709,7 @@
     "notes": "🇹🇷 ITRA UTMB INDEXYENİ TARİH! YARIŞIN ADI DEĞİŞTİ!"
   },
   {
-    "id": 127,
+    "id": 126,
     "type": "Patika",
     "icon": "🌳",
     "name": "Kızılcahamam Eğrekkaya Ultra Trail",
@@ -1736,7 +1724,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 128,
+    "id": 127,
     "type": "Patika",
     "icon": "🌳",
     "name": "Silivri Ultra Trail",
@@ -1751,7 +1739,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 129,
+    "id": 128,
     "type": "Patika",
     "icon": "🌳",
     "name": "Petra Desert Marathon",
@@ -1763,7 +1751,7 @@
     "notes": ""
   },
   {
-    "id": 130,
+    "id": 129,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Maga SkyMarathon",
@@ -1775,7 +1763,7 @@
     "notes": "SKYRACE WS ⚪"
   },
   {
-    "id": 131,
+    "id": 130,
     "type": "Patika",
     "icon": "🌳",
     "name": "Vertical & Trofeo Nasego",
@@ -1787,7 +1775,7 @@
     "notes": ""
   },
   {
-    "id": 132,
+    "id": 131,
     "type": "Yol",
     "icon": "🛣",
     "name": "Edirne Yarı Maratonu",
@@ -1801,7 +1789,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 133,
+    "id": 132,
     "type": "Yol",
     "icon": "🛣",
     "name": "İsmail Akçay Koşusu",
@@ -1815,7 +1803,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 134,
+    "id": 133,
     "type": "Diğer",
     "icon": "🌋",
     "name": "Pirin Ultra",
@@ -1827,7 +1815,7 @@
     "notes": ""
   },
   {
-    "id": 135,
+    "id": 134,
     "type": "Patika",
     "icon": "🌳",
     "name": "Wild Strubel by UTMB",
@@ -1841,7 +1829,7 @@
     "notes": "*UTMBWS*"
   },
   {
-    "id": 136,
+    "id": 135,
     "type": "Patika",
     "icon": "🌳",
     "name": "Snow Basin by UTMB",
@@ -1855,7 +1843,7 @@
     "notes": "*UTMBWS*"
   },
   {
-    "id": 137,
+    "id": 136,
     "type": "Patika",
     "icon": "🌳",
     "name": "Kaçkar by UTMB",
@@ -1870,7 +1858,7 @@
     "notes": "🇹🇷 UTMB INDEX  *UTMBWS* √"
   },
   {
-    "id": 138,
+    "id": 137,
     "type": "Diğer",
     "icon": "🌋",
     "name": "Tor des Geants",
@@ -1882,7 +1870,7 @@
     "notes": ""
   },
   {
-    "id": 139,
+    "id": 138,
     "type": "Patika",
     "icon": "🌳",
     "name": "Quicksilver Beach Run",
@@ -1897,7 +1885,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 140,
+    "id": 139,
     "type": "Bisiklet",
     "icon": "🚵‍♂️",
     "name": "Yalova Gran Fondo",
@@ -1911,7 +1899,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 141,
+    "id": 140,
     "type": "Yol",
     "icon": "🏊‍♀️🚵‍♂️🛣",
     "name": "IRONMAN 70.3 NICE",
@@ -1923,7 +1911,7 @@
     "notes": ""
   },
   {
-    "id": 142,
+    "id": 141,
     "type": "Patika",
     "icon": "🌳",
     "name": "Aydos Kale Trail",
@@ -1938,7 +1926,7 @@
     "notes": "🇹🇷 (YENİ 🎈)YENİ TARİH!"
   },
   {
-    "id": 143,
+    "id": 142,
     "type": "Yol",
     "icon": "🛣",
     "name": "9 Eylül İzmir Yarı Maratonu",
@@ -1952,7 +1940,7 @@
     "notes": "🇹🇷 √"
   },
   {
-    "id": 144,
+    "id": 143,
     "type": "Yol",
     "icon": "🛣",
     "name": "Ayvalık Yarı Maratonu",
@@ -1966,7 +1954,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 145,
+    "id": 144,
     "type": "Yol",
     "icon": "🛣",
     "name": "Amasra Çeşmi Cihan Koşusu",
@@ -1981,7 +1969,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 146,
+    "id": 145,
     "type": "Yol",
     "icon": "🛣",
     "name": "Bolu Köroğlu Yarı Maratonu",
@@ -1997,7 +1985,7 @@
     "notes": "🇹🇷 (YENİ 🎈)İPTAL!"
   },
   {
-    "id": 147,
+    "id": 146,
     "type": "Patika",
     "icon": "🌳",
     "name": "Grindstone Trail Running Festival by UTMB",
@@ -2011,7 +1999,7 @@
     "notes": "*UTMBWS*"
   },
   {
-    "id": 148,
+    "id": 147,
     "type": "Patika",
     "icon": "🌳",
     "name": "Vietnam Mountain Marathon",
@@ -2023,7 +2011,7 @@
     "notes": "*WTM*"
   },
   {
-    "id": 149,
+    "id": 148,
     "type": "Patika",
     "icon": "🌳🏊‍♀️",
     "name": "Ultimate Cunda",
@@ -2037,7 +2025,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 150,
+    "id": 149,
     "type": "Yol",
     "icon": "🏊‍♀️🚵‍♂️🛣",
     "name": "Mudanya Triatlonu",
@@ -2051,7 +2039,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 151,
+    "id": 150,
     "type": "Diğer",
     "icon": "🚣",
     "name": "Dragon Festivali",
@@ -2065,7 +2053,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 152,
+    "id": 151,
     "type": "Patika",
     "icon": "🌳",
     "name": "Three Lakes Marathon",
@@ -2077,7 +2065,7 @@
     "notes": "𝗠𝗥𝗔 𝗠𝗢𝗨𝗡𝗧𝗔𝗜𝗡 𝗥𝗨𝗡𝗡𝗜𝗡𝗚 𝗪𝗢𝗥𝗟𝗗 𝗖𝗨𝗣 𝟮𝟬𝟮𝟲 (Long Distance Final)"
   },
   {
-    "id": 153,
+    "id": 152,
     "type": "Yol",
     "icon": "🛣",
     "name": "Anadolu Sigorta Koşusu",
@@ -2092,7 +2080,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 154,
+    "id": 153,
     "type": "Yol",
     "icon": "🛣",
     "name": "Tuzla 10K 5K Yol Koşusu",
@@ -2106,7 +2094,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 155,
+    "id": 154,
     "type": "Yol",
     "icon": "🛣",
     "name": "Kayseri Yarı Maratonu",
@@ -2120,7 +2108,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 156,
+    "id": 155,
     "type": "Yol",
     "icon": "🛣",
     "name": "Copenhagen Half Marathon",
@@ -2132,7 +2120,7 @@
     "notes": "SuperHalfs"
   },
   {
-    "id": 157,
+    "id": 156,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Salomon Golden Trail Series – Myoko Trail",
@@ -2144,7 +2132,7 @@
     "notes": ""
   },
   {
-    "id": 158,
+    "id": 157,
     "type": "Yol",
     "icon": "🛣",
     "name": "Gökova Yarı Maratonu",
@@ -2159,7 +2147,7 @@
     "notes": "🇹🇷YENİ TARİH!"
   },
   {
-    "id": 159,
+    "id": 158,
     "type": "Yol",
     "icon": "🛣",
     "name": "Spartathlon",
@@ -2171,7 +2159,7 @@
     "notes": ""
   },
   {
-    "id": 160,
+    "id": 159,
     "type": "Yol",
     "icon": "🛣",
     "name": "Büyükada Yarı Maratonu",
@@ -2185,7 +2173,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 161,
+    "id": 160,
     "type": "Yol",
     "icon": "🛣",
     "name": "Krallar Vadisi Yarı Maratonu",
@@ -2200,7 +2188,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 162,
+    "id": 161,
     "type": "Yol",
     "icon": "🛣",
     "name": "Urla’da BirİZ Sosyal Sorumluluk Koşusu",
@@ -2214,7 +2202,7 @@
     "notes": "🇹🇷 √"
   },
   {
-    "id": 163,
+    "id": 162,
     "type": "Yol",
     "icon": "🛣",
     "name": "Berlin Marathon",
@@ -2226,7 +2214,7 @@
     "notes": ""
   },
   {
-    "id": 164,
+    "id": 163,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Gorbeia Suzien",
@@ -2238,7 +2226,7 @@
     "notes": "SKYRACE WS 🔴"
   },
   {
-    "id": 165,
+    "id": 164,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Salomon Golden Trail Series – Jinshanling Great Wall",
@@ -2250,7 +2238,7 @@
     "notes": ""
   },
   {
-    "id": 166,
+    "id": 165,
     "type": "Patika",
     "icon": "🌳",
     "name": "Ultra Pirineu",
@@ -2262,7 +2250,7 @@
     "notes": "√"
   },
   {
-    "id": 167,
+    "id": 166,
     "type": "Yol",
     "icon": "🛣",
     "name": "Afşin Elbistan Ultra Maratonu",
@@ -2276,7 +2264,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 168,
+    "id": 167,
     "type": "Patika",
     "icon": "🌳",
     "name": "Beypazarı Ultra Trail",
@@ -2290,7 +2278,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 169,
+    "id": 168,
     "type": "Yol",
     "icon": "🛣",
     "name": "İstanbul’u Koşuyorum Avrupa Etabı – Yenikapı",
@@ -2304,7 +2292,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 170,
+    "id": 169,
     "type": "Yol",
     "icon": "🛣",
     "name": "Eker I Run",
@@ -2318,7 +2306,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 171,
+    "id": 170,
     "type": "Yol",
     "icon": "🛣",
     "name": "Bodrum Yarı Maratonu",
@@ -2332,7 +2320,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 172,
+    "id": 171,
     "type": "Yol",
     "icon": "🛣",
     "name": "Sinop Yarı Maratonu",
@@ -2347,7 +2335,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 173,
+    "id": 172,
     "type": "Bisiklet",
     "icon": "🚵‍♂️",
     "name": "Gran Fondo İzmir",
@@ -2361,7 +2349,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 174,
+    "id": 173,
     "type": "Yol",
     "icon": "🛣",
     "name": "Cardiff Half Marathon",
@@ -2373,7 +2361,7 @@
     "notes": "SuperHalfs"
   },
   {
-    "id": 175,
+    "id": 174,
     "type": "Yol",
     "icon": "🛣",
     "name": "Cologne Marathon",
@@ -2385,7 +2373,7 @@
     "notes": "√"
   },
   {
-    "id": 176,
+    "id": 175,
     "type": "Patika",
     "icon": "🌳",
     "name": "Kyzikos Ultra",
@@ -2399,7 +2387,7 @@
     "notes": "🇹🇷RR2019VLOG2019"
   },
   {
-    "id": 177,
+    "id": 176,
     "type": "Yüzme",
     "icon": "🏊‍♀️",
     "name": "Ölüdeniz Open Water",
@@ -2413,7 +2401,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 178,
+    "id": 177,
     "type": "Yol",
     "icon": "🛣",
     "name": "Budapest Marathon",
@@ -2425,7 +2413,7 @@
     "notes": ""
   },
   {
-    "id": 179,
+    "id": 178,
     "type": "Yol",
     "icon": "🏊‍♀️🚵‍♂️🛣",
     "name": "IRONMAN World Championship – Kona",
@@ -2437,7 +2425,7 @@
     "notes": ""
   },
   {
-    "id": 180,
+    "id": 179,
     "type": "Yol",
     "icon": "🛣",
     "name": "Cumhurbaşkanlığı Koşusu",
@@ -2451,7 +2439,7 @@
     "notes": "🇹🇷 İsim değiştirdi."
   },
   {
-    "id": 181,
+    "id": 180,
     "type": "Yol",
     "icon": "🛣",
     "name": "Bosphorun Quarter Marathon – Beşiktaş",
@@ -2465,7 +2453,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 182,
+    "id": 181,
     "type": "Yol",
     "icon": "🛣",
     "name": "Anadolu Yarı Maratonu",
@@ -2480,7 +2468,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 183,
+    "id": 182,
     "type": "Yol",
     "icon": "🛣",
     "name": "Gelibolu Maratonu",
@@ -2494,7 +2482,7 @@
     "notes": "🇹🇷RR2015"
   },
   {
-    "id": 184,
+    "id": 183,
     "type": "Yol",
     "icon": "🛣",
     "name": "St Nicholas Half Marathon",
@@ -2510,7 +2498,7 @@
     "notes": "🇹🇷 (YENİ 🎈)ARALIK’A ERTELENDİ!"
   },
   {
-    "id": 185,
+    "id": 184,
     "type": "Yol",
     "icon": "🛣",
     "name": "Chicago Marathon",
@@ -2522,7 +2510,7 @@
     "notes": ""
   },
   {
-    "id": 186,
+    "id": 185,
     "type": "Yol",
     "icon": "🛣",
     "name": "Munich Marathon",
@@ -2534,7 +2522,7 @@
     "notes": ""
   },
   {
-    "id": 187,
+    "id": 186,
     "type": "Patika",
     "icon": "🌳",
     "name": "Festival des Templiers",
@@ -2546,7 +2534,7 @@
     "notes": "♥"
   },
   {
-    "id": 188,
+    "id": 187,
     "type": "Bisiklet",
     "icon": "🚵‍♂️",
     "name": "Taurus Mountain Race",
@@ -2560,7 +2548,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 189,
+    "id": 188,
     "type": "Patika",
     "icon": "🌳",
     "name": "Cappadocia Ultra Trail",
@@ -2575,7 +2563,7 @@
     "notes": "🇹🇷 ITRA UTMB INDEX ♥ √RR2025*RR2021RR2019ENVLOG"
   },
   {
-    "id": 190,
+    "id": 189,
     "type": "Patika",
     "icon": "🌳",
     "name": "Big Dog’s Satellite Championships: Team Turkey",
@@ -2589,7 +2577,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 191,
+    "id": 190,
     "type": "Yol",
     "icon": "🛣",
     "name": "Çorlu Yarı Maratonu",
@@ -2604,7 +2592,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 192,
+    "id": 191,
     "type": "Yol",
     "icon": "🛣",
     "name": "Fethiye Likya’rı Maratonu",
@@ -2618,7 +2606,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 193,
+    "id": 192,
     "type": "Patika",
     "icon": "🌳",
     "name": "Run Nysa",
@@ -2632,7 +2620,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 194,
+    "id": 193,
     "type": "Yol",
     "icon": "🛣",
     "name": "TCS Amsterdam Marathon",
@@ -2644,7 +2632,7 @@
     "notes": "♥RR2015"
   },
   {
-    "id": 195,
+    "id": 194,
     "type": "Yol",
     "icon": "🛣",
     "name": "Neopolis Marathon",
@@ -2656,7 +2644,7 @@
     "notes": ""
   },
   {
-    "id": 196,
+    "id": 195,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Mt Kinabalu International Climbathlon",
@@ -2668,7 +2656,7 @@
     "notes": "SKYRACE WS ⚪"
   },
   {
-    "id": 197,
+    "id": 196,
     "type": "Yol",
     "icon": "🛣",
     "name": "Heliz Kaş Yarı Maratonu",
@@ -2682,7 +2670,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 198,
+    "id": 197,
     "type": "Yüzme",
     "icon": "🏊‍♀️",
     "name": "Aquachallange Yüzme Şampiyonası",
@@ -2696,7 +2684,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 199,
+    "id": 198,
     "type": "Yol",
     "icon": "🏊‍♀️🚵‍♂️🛣",
     "name": "Alanya Triatlonu Yaş Grupları Türkiye Finali – 2026 Europe Triathlon Cup&Para CupAlanya",
@@ -2710,7 +2698,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 200,
+    "id": 199,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Sobrescobio Redes Trail",
@@ -2722,7 +2710,7 @@
     "notes": "SKYRACE WS ⚪"
   },
   {
-    "id": 201,
+    "id": 200,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Salomon Golden Trail Series GRAND FINALE – Muju Trail",
@@ -2734,7 +2722,7 @@
     "notes": ""
   },
   {
-    "id": 202,
+    "id": 201,
     "type": "Yol",
     "icon": "🛣",
     "name": "Lykos Yarı Maratonu ve Cumhuriyet Halk Koşusu",
@@ -2748,7 +2736,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 203,
+    "id": 202,
     "type": "Yol",
     "icon": "🛣",
     "name": "Ankara Zaman Koşusu",
@@ -2763,7 +2751,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 204,
+    "id": 203,
     "type": "Yol",
     "icon": "🛣",
     "name": "Tarsus Yarı Maratonu",
@@ -2777,7 +2765,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 205,
+    "id": 204,
     "type": "Bisiklet",
     "icon": "🚵‍♂️",
     "name": "Velo Türk Gran Fondo Çeşme",
@@ -2791,7 +2779,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 206,
+    "id": 205,
     "type": "Yol",
     "icon": "🛣",
     "name": "Valencia Half Marathon",
@@ -2803,7 +2791,7 @@
     "notes": "SuperHalfs"
   },
   {
-    "id": 207,
+    "id": 206,
     "type": "Yol",
     "icon": "🛣",
     "name": "Frankfurt Marathon",
@@ -2815,7 +2803,7 @@
     "notes": ""
   },
   {
-    "id": 208,
+    "id": 207,
     "type": "Yol",
     "icon": "🛣",
     "name": "Dublin Marathon",
@@ -2827,7 +2815,7 @@
     "notes": ""
   },
   {
-    "id": 209,
+    "id": 208,
     "type": "Yol",
     "icon": "🛣",
     "name": "Lisbon Marathon",
@@ -2839,7 +2827,7 @@
     "notes": ""
   },
   {
-    "id": 210,
+    "id": 209,
     "type": "Yol",
     "icon": "🛣",
     "name": "Venice Marathon",
@@ -2851,7 +2839,7 @@
     "notes": ""
   },
   {
-    "id": 211,
+    "id": 210,
     "type": "Yol",
     "icon": "🛣",
     "name": "Shimada Oigawa Marathon",
@@ -2863,7 +2851,7 @@
     "notes": ""
   },
   {
-    "id": 212,
+    "id": 211,
     "type": "Yol",
     "icon": "🛣",
     "name": "Zeytinburnu Cumhuriyet Koşusu",
@@ -2877,7 +2865,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 213,
+    "id": 212,
     "type": "Yüzme",
     "icon": "🏊‍♀️",
     "name": "Aquachallange Yüzme Şampiyonası",
@@ -2891,7 +2879,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 214,
+    "id": 213,
     "type": "Bisiklet",
     "icon": "🚵‍♂️",
     "name": "AHULEX The Monument Race",
@@ -2905,7 +2893,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 215,
+    "id": 214,
     "type": "Patika",
     "icon": "🌳",
     "name": "Çatalca Ultra Trail",
@@ -2920,7 +2908,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 216,
+    "id": 215,
     "type": "Patika",
     "icon": "🌳",
     "name": "Kullamannen by UTMB",
@@ -2934,7 +2922,7 @@
     "notes": "*UTMBWS* ♥"
   },
   {
-    "id": 217,
+    "id": 216,
     "type": "Yol",
     "icon": "🛣",
     "name": "Fethiye Ultra Zaman Sınırı Koşusu",
@@ -2948,7 +2936,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 218,
+    "id": 217,
     "type": "Patika",
     "icon": "🌳",
     "name": "Manavgat Backyard Ultra",
@@ -2962,7 +2950,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 219,
+    "id": 218,
     "type": "Yol",
     "icon": "🛣",
     "name": "İstanbul Maratonu",
@@ -2976,7 +2964,7 @@
     "notes": "🇹🇷 √RR2015VLOG"
   },
   {
-    "id": 220,
+    "id": 219,
     "type": "Yol",
     "icon": "🏊‍♀️🚵‍♂️🛣",
     "name": "IRONMAN 70.3",
@@ -2990,7 +2978,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 221,
+    "id": 220,
     "type": "Yol",
     "icon": "🛣",
     "name": "New York Marathon",
@@ -3002,7 +2990,7 @@
     "notes": ""
   },
   {
-    "id": 222,
+    "id": 221,
     "type": "Patika",
     "icon": "🌳",
     "name": "Grampians Peak Trail – GPT100",
@@ -3014,7 +3002,7 @@
     "notes": "*WTM*"
   },
   {
-    "id": 223,
+    "id": 222,
     "type": "Patika",
     "icon": "🌳",
     "name": "Varda Ultra Traill",
@@ -3028,7 +3016,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 224,
+    "id": 223,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Marato dels Dements",
@@ -3040,7 +3028,7 @@
     "notes": "SKYRACE WS 🔴"
   },
   {
-    "id": 225,
+    "id": 224,
     "type": "Yol",
     "icon": "🛣",
     "name": "Ata’dan Ana’ya Saygı Koşusu",
@@ -3054,7 +3042,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 226,
+    "id": 225,
     "type": "Patika",
     "icon": "🌳",
     "name": "Bodrun Ultra Maratonu",
@@ -3068,7 +3056,7 @@
     "notes": "🇹🇷RR2016"
   },
   {
-    "id": 227,
+    "id": 226,
     "type": "Bisiklet",
     "icon": "🚵‍♂️",
     "name": "UCI Gran Fondo Antalya",
@@ -3082,7 +3070,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 228,
+    "id": 227,
     "type": "Yol",
     "icon": "🛣",
     "name": "Athens Marathon",
@@ -3094,7 +3082,7 @@
     "notes": ""
   },
   {
-    "id": 229,
+    "id": 228,
     "type": "Yol",
     "icon": "🛣",
     "name": "Fukuoka Marathon",
@@ -3106,7 +3094,7 @@
     "notes": ""
   },
   {
-    "id": 230,
+    "id": 229,
     "type": "Yol",
     "icon": "🛣",
     "name": "Atatürk’ü Anma Kros Koşusu",
@@ -3120,7 +3108,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 231,
+    "id": 230,
     "type": "Diğer",
     "icon": "🌋",
     "name": "Sagalassos Sky Ultra",
@@ -3136,7 +3124,7 @@
     "notes": "🇹🇷 ITRA UTMB INDEXYENİ TARİH!"
   },
   {
-    "id": 232,
+    "id": 231,
     "type": "Patika",
     "icon": "🌳",
     "name": "Latmos Ultra",
@@ -3149,6 +3137,21 @@
       "UTMB"
     ],
     "notes": "🇹🇷 UTMB INDEXRR2019VLOG2019"
+  },
+  {
+    "id": 232,
+    "type": "Patika",
+    "icon": "🌳",
+    "name": "Antalya Canyon Ultra",
+    "date": "14.11.2026",
+    "location": "Antalya",
+    "distance": "TBC",
+    "link": "https://www.instagram.com/antalyacanyonultra/",
+    "tags": [
+      "TR",
+      "YENİ"
+    ],
+    "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
     "id": 233,
@@ -10750,6 +10753,18 @@
     "location": "İtalya",
     "distance": "21K",
     "link": "https://ledrosky.it/en",
+    "tags": [],
+    "notes": ""
+  },
+  {
+    "id": 793,
+    "type": "Diğer",
+    "icon": "❌",
+    "name": "RedBull X Alps Challenger",
+    "date": "28-31.05.2026",
+    "location": "Avusturya",
+    "distance": "Extrem",
+    "link": "https://www.redbullxalps.com/int-en/",
     "tags": [],
     "notes": ""
   }
