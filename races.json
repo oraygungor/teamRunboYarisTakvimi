@@ -282,7 +282,7 @@
     "name": "Open Water Turkey",
     "date": "02.08.2026",
     "location": "İzmir, Çeşme",
-    "distance": "4000m",
+    "distance": "1000m, 4000m",
     "link": "https://www.instagram.com/p/DaU70rzI9BK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     "tags": [
       "TR"
@@ -439,11 +439,11 @@
     "id": 33,
     "type": "Yol",
     "icon": "🛣",
-    "name": "Gömeç Atatürk Yol Koşusu",
+    "name": "Ege’nin İki Yakası Dostluk Koşusu – Gömeç Atatürk Yol Koşusu",
     "date": "22.08.2026",
     "location": "Balıkesir, Gömeç",
-    "distance": "10K",
-    "link": "https://kosu.taf.org.tr/",
+    "distance": "3K, 10K",
+    "link": "https://kosu.taf.org.tr/yarisma_detay.php?id=179",
     "tags": [
       "TR",
       "YENİ"
@@ -1032,6 +1032,20 @@
   },
   {
     "id": 77,
+    "type": "Yol",
+    "icon": "🏊‍♀️🚵‍♂️🛣",
+    "name": "Mudanya Triatlonu",
+    "date": "18.09.2026",
+    "location": "Bursa",
+    "distance": "",
+    "link": "https://portal.triatlon.org.tr/tr/portal/list/",
+    "tags": [
+      "TR"
+    ],
+    "notes": "🇹🇷"
+  },
+  {
+    "id": 78,
     "type": "Patika",
     "icon": "🌳🏊‍♀️",
     "name": "Ultimate Cunda",
@@ -1045,7 +1059,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 78,
+    "id": 79,
     "type": "Diğer",
     "icon": "🏋",
     "name": "HYROX IZMIR",
@@ -1058,20 +1072,6 @@
       "YENİ"
     ],
     "notes": "🇹🇷 (YENİ 🎈)"
-  },
-  {
-    "id": 79,
-    "type": "Yol",
-    "icon": "🏊‍♀️🚵‍♂️🛣",
-    "name": "Mudanya Triatlonu",
-    "date": "19-20.09.2026",
-    "location": "Bursa",
-    "distance": "",
-    "link": "https://portal.triatlon.org.tr/tr/portal/list/",
-    "tags": [
-      "TR"
-    ],
-    "notes": "🇹🇷"
   },
   {
     "id": 80,
