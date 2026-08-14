@@ -1645,20 +1645,6 @@
   },
   {
     "id": 122,
-    "type": "Oryantiring",
-    "icon": "🧭",
-    "name": "Istanbul 5 days -Grand Bazaar",
-    "date": "24-25.10.2026",
-    "location": "İstanbul, Kapalıçarşı",
-    "distance": "2 gün 3 etap, Sprint",
-    "link": "https://www.ist5days.com/",
-    "tags": [
-      "TR"
-    ],
-    "notes": "🇹🇷 √"
-  },
-  {
-    "id": 123,
     "type": "Yüzme",
     "icon": "🏊‍♀️",
     "name": "Aquachallange Yüzme Şampiyonası",
@@ -1672,7 +1658,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 124,
+    "id": 123,
     "type": "Yol",
     "icon": "🏊‍♀️🚵‍♂️🛣",
     "name": "Alanya Triatlonu Yaş Grupları Türkiye Finali – 2026 Europe Triathlon Cup&Para CupAlanya",
@@ -1686,7 +1672,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 125,
+    "id": 124,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Sobrescobio Redes Trail",
@@ -1698,7 +1684,7 @@
     "notes": "SKYRACE WS ⚪"
   },
   {
-    "id": 126,
+    "id": 125,
     "type": "Diğer",
     "icon": "🎢",
     "name": "Salomon Golden Trail Series GRAND FINALE – Muju Trail",
@@ -1710,7 +1696,7 @@
     "notes": ""
   },
   {
-    "id": 127,
+    "id": 126,
     "type": "Yol",
     "icon": "🛣",
     "name": "Zeytinburnu Cumhuriyet Koşusu",
@@ -1724,7 +1710,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 128,
+    "id": 127,
     "type": "Yol",
     "icon": "🛣",
     "name": "Caddebostan Cumhuriyet Koşusu",
@@ -1739,7 +1725,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 129,
+    "id": 128,
     "type": "Yol",
     "icon": "🛣",
     "name": "Lykos Yarı Maratonu ve Cumhuriyet Halk Koşusu",
@@ -1753,7 +1739,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 130,
+    "id": 129,
     "type": "Yol",
     "icon": "🛣",
     "name": "Ankara Zaman Koşusu",
@@ -1768,7 +1754,7 @@
     "notes": "🇹🇷 (YENİ 🎈)"
   },
   {
-    "id": 131,
+    "id": 130,
     "type": "Yol",
     "icon": "🛣",
     "name": "Tarsus Yarı Maratonu",
@@ -1782,7 +1768,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 132,
+    "id": 131,
     "type": "Bisiklet",
     "icon": "🚵‍♂️",
     "name": "Velo Türk Gran Fondo Çeşme",
@@ -1796,7 +1782,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 133,
+    "id": 132,
     "type": "Yol",
     "icon": "🛣",
     "name": "Valencia Half Marathon",
@@ -1808,7 +1794,7 @@
     "notes": "SuperHalfs"
   },
   {
-    "id": 134,
+    "id": 133,
     "type": "Yol",
     "icon": "🛣",
     "name": "Frankfurt Marathon",
@@ -1820,7 +1806,7 @@
     "notes": ""
   },
   {
-    "id": 135,
+    "id": 134,
     "type": "Yol",
     "icon": "🛣",
     "name": "Hamburg Half Marathon",
@@ -1832,7 +1818,7 @@
     "notes": ""
   },
   {
-    "id": 136,
+    "id": 135,
     "type": "Yol",
     "icon": "🛣",
     "name": "Dublin Marathon",
@@ -1844,7 +1830,7 @@
     "notes": ""
   },
   {
-    "id": 137,
+    "id": 136,
     "type": "Yol",
     "icon": "🛣",
     "name": "Lisbon Marathon",
@@ -1856,7 +1842,7 @@
     "notes": ""
   },
   {
-    "id": 138,
+    "id": 137,
     "type": "Yol",
     "icon": "🛣",
     "name": "Venice Marathon",
@@ -1868,7 +1854,7 @@
     "notes": ""
   },
   {
-    "id": 139,
+    "id": 138,
     "type": "Yol",
     "icon": "🛣",
     "name": "Shimada Oigawa Marathon",
@@ -1880,7 +1866,7 @@
     "notes": ""
   },
   {
-    "id": 140,
+    "id": 139,
     "type": "Yüzme",
     "icon": "🏊‍♀️",
     "name": "Aquachallange Yüzme Şampiyonası",
@@ -1894,7 +1880,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 141,
+    "id": 140,
     "type": "Oryantiring",
     "icon": "🧭",
     "name": "Antalya O-FEST",
@@ -1908,7 +1894,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 142,
+    "id": 141,
     "type": "Bisiklet",
     "icon": "🚵‍♂️",
     "name": "AHULEX The Monument Race",
@@ -1922,7 +1908,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 143,
+    "id": 142,
     "type": "Yol",
     "icon": "🛣",
     "name": "Mülkiye Cumhuriyet Koşusu",
@@ -1936,7 +1922,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 144,
+    "id": 143,
     "type": "Patika",
     "icon": "🌳",
     "name": "Kullamannen by UTMB",
@@ -1950,7 +1936,7 @@
     "notes": "*UTMBWS* ♥"
   },
   {
-    "id": 145,
+    "id": 144,
     "type": "Yol",
     "icon": "🛣",
     "name": "Fethiye Ultra Zaman Sınırı Koşusu",
@@ -1964,7 +1950,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 146,
+    "id": 145,
     "type": "Patika",
     "icon": "🌳",
     "name": "Manavgat Backyard Ultra",
@@ -1978,7 +1964,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 147,
+    "id": 146,
     "type": "Yol",
     "icon": "🛣",
     "name": "İstanbul Maratonu",
@@ -1992,7 +1978,7 @@
     "notes": "🇹🇷 √RR2015VLOG"
   },
   {
-    "id": 148,
+    "id": 147,
     "type": "Yol",
     "icon": "🏊‍♀️🚵‍♂️🛣",
     "name": "IRONMAN 70.3",
@@ -2006,7 +1992,7 @@
     "notes": "🇹🇷"
   },
   {
-    "id": 149,
+    "id": 148,
     "type": "Yol",
     "icon": "🛣",
     "name": "New York Marathon",
@@ -2018,7 +2004,7 @@
     "notes": ""
   },
   {
-    "id": 150,
+    "id": 149,
     "type": "Patika",
     "icon": "🌳",
     "name": "Grampians Peak Trail – GPT100",
@@ -2028,6 +2014,20 @@
     "link": "https://www.gpt100.com.au/",
     "tags": [],
     "notes": "*WTM*"
+  },
+  {
+    "id": 150,
+    "type": "Oryantiring",
+    "icon": "🧭",
+    "name": "Istanbul 5 days -Kapalıçarşı",
+    "date": "07-08.11.2026",
+    "location": "İstanbul, Balat, Kapalıçarşı",
+    "distance": "2 gün 2 etap, Sürat",
+    "link": "https://www.ist5days.com/",
+    "tags": [
+      "TR"
+    ],
+    "notes": "🇹🇷 √"
   },
   {
     "id": 151,
